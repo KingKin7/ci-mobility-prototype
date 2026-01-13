@@ -91,7 +91,7 @@ dmypy.json
 .ipynb_checkpoints/
 *.ipynb
 
-# Data files (don't commit large data)
+# Data files
 data/raw/*
 data/processed/*
 data/synthetic/*
