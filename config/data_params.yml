@@ -1,0 +1,121 @@
+# Configuration du générateur de données synthétiques
+# Projet: Mobilité Côte d'Ivoire - ANStat
+# Version: 1.0.0
+
+# Paramètres généraux
+project:
+  name: "CI Mobility Prototype"
+  version: "1.0.0"
+  standard: "UN-MPDMS v2.0"
+  country: "CI"
+
+# Paramètres de génération
+generation:
+  n_users: 10000
+  start_date: "2024-01-01"
+  end_date: "2024-01-31"
+  days_to_generate: 30
+  random_seed: 42
+
+# Limites spatiales de la Côte d'Ivoire
+spatial_bounds:
+  min_lat: 4.1621
+  max_lat: 10.7364
+  min_lon: -8.5993
+  max_lon: -2.4930
+
+# Centres urbains avec pondérations
+urban_centers:
+  Abidjan:
+    lat: 5.3600
+    lon: -4.0083
+    weight: 0.40
+    districts:
+      - Plateau
+      - Cocody
+      - Yopougon
+      - Abobo
+      - Marcory
+      - Treichville
+  Bouaké:
+    lat: 7.6833
+    lon: -5.0331
+    weight: 0.15
+  Yamoussoukro:
+    lat: 6.8276
+    lon: -5.2893
+    weight: 0.10
+  Korhogo:
+    lat: 9.4578
+    lon: -5.6297
+    weight: 0.08
+  San-Pedro:
+    lat: 4.7485
+    lon: -6.6363
+    weight: 0.07
+  Daloa:
+    lat: 6.8748
+    lon: -6.4502
+    weight: 0.05
+  Man:
+    lat: 7.4123
+    lon: -7.5539
+    weight: 0.05
+  Others:
+    lat: 6.5000
+    lon: -5.5000
+    weight: 0.10
+
+# Distributions démographiques
+demographics:
+  age_groups:
+    values: ["18-24", "25-34", "35-44", "45-54", "55+"]
+    probabilities: [0.25, 0.35, 0.20, 0.15, 0.05]
+  
+  gender:
+    values: ["M", "F"]
+    probabilities: [0.52, 0.48]
+  
+  occupation:
+    values: ["farmer", "trader", "employee", "student", "informal_sector", "unemployed", "other"]
+    probabilities: [0.30, 0.20, 0.15, 0.10, 0.15, 0.05, 0.05]
+  
+  phone_type:
+    values: ["basic", "feature", "smartphone"]
+    probabilities: [0.30, 0.35, 0.35]
+  
+  subscription:
+    values: ["prepaid", "postpaid"]
+    probabilities: [0.85, 0.15]
+
+# Paramètres de mobilité
+mobility:
+  h3_resolution: 7  # ~1.41km edge length
+  daily_trips_lambda: 3
+  mobility_radius_mean: 5.0  # km
+  mobility_radius_std: 3.0
+
+# Paramètres économiques (recharges)
+economic:
+  recharge_amounts: [100, 200, 500, 1000, 2000, 5000, 10000]
+  recharge_probs_poor: [0.35, 0.30, 0.20, 0.10, 0.04, 0.01, 0.00]
+  recharge_probs_rich: [0.05, 0.10, 0.15, 0.25, 0.25, 0.15, 0.05]
+
+# Paramètres de migration
+migration:
+  distance_threshold_km: 50  # Distance min pour considérer une migration
+  duration_threshold_days: 7  # Durée min pour considérer une migration
+  migration_probability: 0.05  # Probabilité mensuelle de migration
+
+# Privacy et conformité
+privacy:
+  k_anonymity: 10
+  epsilon: 1.0  # Budget differential privacy
+  salt_rotation_days: 15
+
+# Chemins des fichiers
+paths:
+  output_dir: "data/synthetic"
+  metadata_dir: "data/metadata"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"

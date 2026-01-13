@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "github.copilot",
+        "github.copilot-chat",
+        "eamodio.gitlens",
+        "redhat.vscode-yaml",
+        "ms-toolsai.jupyter",
+        "njpwerner.autodocstring",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}
