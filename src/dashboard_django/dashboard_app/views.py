@@ -74,3 +74,13 @@ class MapView(DashboardMixin, View):
         context['current_page'] = 'map'
         context['map_data'] = data_service.get_map_data()
         return render(request, self.template_name, context)
+
+
+class TemporalMobilityView(DashboardMixin, View):
+    """Vue de mobilité temporelle avec animations"""
+    template_name = 'dashboard/temporal_mobility.html'
+    
+    def get(self, request):
+        context = self.get_base_context()
+        context['current_page'] = 'temporal'
+        return render(request, self.template_name, context)

@@ -15,6 +15,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
+# Import du module de mobilité temporelle
+from temporal_mobility import show_temporal_mobility_page
+
 # Configuration de la page
 st.set_page_config(
     page_title="Dashboard Mobilité CI",
@@ -1319,7 +1322,14 @@ def main():
     # Navigation
     page = st.sidebar.radio(
         "Sélectionner une page",
-        ["🏠 Vue d'ensemble", "📉 Pauvreté", "🚶 Migration", "🚗 Mobilité", "🗺️ Carte"],
+        [
+            "🏠 Vue d'ensemble",
+            "📉 Pauvreté",
+            "🚶 Migration",
+            "🚗 Mobilité",
+            "🎬 Mobilité Temporelle",
+            "🗺️ Carte",
+        ],
     )
 
     st.sidebar.markdown("---")
@@ -1337,6 +1347,8 @@ def main():
         show_migration_analysis(data)
     elif page == "🚗 Mobilité":
         show_mobility_analysis(data)
+    elif page == "🎬 Mobilité Temporelle":
+        show_temporal_mobility_page()
     elif page == "🗺️ Carte":
         show_interactive_map(data)
 

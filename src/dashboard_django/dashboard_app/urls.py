@@ -12,4 +12,5 @@ urlpatterns = [
     path('migration/', views.MigrationView.as_view(), name='migration'),
     path('mobility/', views.MobilityView.as_view(), name='mobility'),
     path('map/', views.MapView.as_view(), name='map'),
+    path('temporal/', views.TemporalMobilityView.as_view(), name='temporal'),
 ]

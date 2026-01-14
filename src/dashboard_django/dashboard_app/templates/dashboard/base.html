@@ -55,6 +55,12 @@
                         <span>Carte</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if current_page == 'temporal' %}active{% endif %}" href="{% url 'dashboard:temporal' %}">
+                        <i class="bi bi-play-circle"></i>
+                        <span>Mobilité Temporelle</span>
+                    </a>
+                </li>
             </ul>
 
             <div class="sidebar-footer">
