@@ -1,0 +1,190 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block title %}Vue d'ensemble - Dashboard Mobilité CI{% endblock %}
+{% block page_title %}🏠 Vue d'ensemble{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="display-6 text-center text-primary mb-4">
+            🇨🇮 Dashboard Mobilité Côte d'Ivoire
+        </h1>
+    </div>
+</div>
+
+<!-- Métriques principales -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card metric-card bg-primary text-white">
+            <div class="card-body text-center">
+                <h6 class="card-subtitle mb-2">👥 Utilisateurs</h6>
+                <h2 class="card-title" id="users-count">{{ stats.users_count|default:0 }}</h2>
+                <small>Profils générés</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card metric-card bg-warning text-dark">
+            <div class="card-body text-center">
+                <h6 class="card-subtitle mb-2">📉 Taux de pauvreté</h6>
+                <h2 class="card-title">{{ stats.poverty_rate|default:0 }}%</h2>
+                <small>Q1 + Q2</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card metric-card bg-info text-white">
+            <div class="card-body text-center">
+                <h6 class="card-subtitle mb-2">🚶 Migrations</h6>
+                <h2 class="card-title">{{ stats.migration_count|default:0 }}</h2>
+                <small>Événements détectés</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card metric-card bg-success text-white">
+            <div class="card-body text-center">
+                <h6 class="card-subtitle mb-2">🚗 Trajets</h6>
+                <h2 class="card-title">{{ stats.mobility_count|default:0 }}</h2>
+                <small>Déplacements analysés</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Graphiques -->
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">🗺️ Distribution par région (Top 15)</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="regionChart" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="mb-0">📍 Répartition</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="urbanRuralChart" height="200"></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">📱 Types de téléphone</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="phoneChart" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Statistiques supplémentaires -->
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="bi bi-geo-alt fs-1 text-primary"></i>
+                <h4>{{ stats.localities_count|default:0 }}</h4>
+                <p class="text-muted">Localités</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="bi bi-map fs-1 text-success"></i>
+                <h4>{{ stats.regions_count|default:0 }}</h4>
+                <p class="text-muted">Régions</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <i class="bi bi-people fs-1 text-info"></i>
+                <h4>{{ stats.urban_rural.urban|default:0 }}</h4>
+                <p class="text-muted">Utilisateurs urbains</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Données du contexte Django
+    const regionData = {{ stats.region_distribution|safe }};
+    const urbanRuralData = {{ stats.urban_rural|safe }};
+    const phoneData = {{ stats.phone_distribution|safe }};
+
+    // Graphique des régions
+    if (regionData && regionData.length > 0) {
+        new Chart(document.getElementById('regionChart'), {
+            type: 'bar',
+            data: {
+                labels: regionData.map(d => d.region),
+                datasets: [{
+                    label: 'Utilisateurs',
+                    data: regionData.map(d => d.count),
+                    backgroundColor: '#FF6B00',
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+    }
+
+    // Graphique urbain/rural
+    if (urbanRuralData) {
+        new Chart(document.getElementById('urbanRuralChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Urbain', 'Rural'],
+                datasets: [{
+                    data: [urbanRuralData.urban || 0, urbanRuralData.rural || 0],
+                    backgroundColor: ['#0d6efd', '#198754']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+    }
+
+    // Graphique des types de téléphone
+    if (phoneData && phoneData.length > 0) {
+        new Chart(document.getElementById('phoneChart'), {
+            type: 'pie',
+            data: {
+                labels: phoneData.map(d => d.type),
+                datasets: [{
+                    data: phoneData.map(d => d.count),
+                    backgroundColor: ['#ffc107', '#17a2b8', '#6c757d']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' }
+                }
+            }
+        });
+    }
+</script>
+{% endblock %}

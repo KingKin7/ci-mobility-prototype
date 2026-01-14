@@ -1,0 +1,245 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block title %}Pauvreté - Dashboard Mobilité CI{% endblock %}
+{% block page_title %}📉 Analyse de la Pauvreté{% endblock %}
+
+{% block content %}
+<!-- Onglets -->
+<ul class="nav nav-tabs mb-4" id="povertyTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview-pane" type="button">
+            📊 Vue d'ensemble
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="regional-tab" data-bs-toggle="tab" data-bs-target="#regional-pane" type="button">
+            🗺️ Par région
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="details-tab" data-bs-toggle="tab" data-bs-target="#details-pane" type="button">
+            📋 Détails
+        </button>
+    </li>
+</ul>
+
+<div class="tab-content" id="povertyTabsContent">
+    <!-- Onglet Vue d'ensemble -->
+    <div class="tab-pane fade show active" id="overview-pane" role="tabpanel">
+        <!-- Métriques -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card metric-card bg-danger text-white">
+                    <div class="card-body text-center">
+                        <h6>Taux de pauvreté</h6>
+                        <h2>{{ stats.poverty_rate|default:0 }}%</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card metric-card bg-warning text-dark">
+                    <div class="card-body text-center">
+                        <h6>Recharge moyenne</h6>
+                        <h2>{{ stats.avg_recharge|default:0 }} FCFA</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card metric-card bg-info text-white">
+                    <div class="card-body text-center">
+                        <h6>Mobilité moyenne</h6>
+                        <h2>{{ stats.avg_mobility|default:0 }} km</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card metric-card bg-primary text-white">
+                    <div class="card-body text-center">
+                        <h6>Diversité contacts</h6>
+                        <h2>{{ stats.avg_diversity|default:0 }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Graphiques -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Distribution par quintile de richesse</h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="quintileChart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Corrélation Mobilité vs Recharges</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="scatterPlot" style="height: 350px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Onglet Par région -->
+    <div class="tab-pane fade" id="regional-pane" role="tabpanel">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Indice de richesse par région</h5>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="regionalChart" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">📊 Tableau régional</h5>
+                    </div>
+                    <div class="card-body" style="max-height: 450px; overflow-y: auto;">
+                        <table class="table table-sm table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Région</th>
+                                    <th>Indice</th>
+                                    <th>Pauvreté</th>
+                                </tr>
+                            </thead>
+                            <tbody id="regionalTable">
+                                {% for r in stats.regional_stats %}
+                                <tr>
+                                    <td>{{ r.region }}</td>
+                                    <td>{{ r.wealth_mean }}</td>
+                                    <td>{{ r.poverty_rate }}%</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Onglet Détails -->
+    <div class="tab-pane fade" id="details-pane" role="tabpanel">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">📈 Statistiques descriptives</h5>
+                        <a href="/api/dataset/poverty/?limit=10000" class="btn btn-sm btn-outline-primary" download>
+                            <i class="bi bi-download"></i> Télécharger CSV
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Statistique</th>
+                                    <th>Indice de richesse</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for key, value in stats.wealth_distribution.items %}
+                                <tr>
+                                    <td>{{ key }}</td>
+                                    <td>{{ value|floatformat:3 }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Données
+    const quintileData = {{ stats.quintile_distribution|safe }};
+    const regionalData = {{ stats.regional_stats|safe }};
+    const scatterData = {{ stats.scatter_data|safe }};
+
+    // Graphique des quintiles
+    if (quintileData && quintileData.length > 0) {
+        const colors = ['#d73027', '#fc8d59', '#fee08b', '#d9ef8b', '#1a9850'];
+        new Chart(document.getElementById('quintileChart'), {
+            type: 'bar',
+            data: {
+                labels: quintileData.map(d => d.quintile),
+                datasets: [{
+                    label: 'Nombre d\'utilisateurs',
+                    data: quintileData.map(d => d.count),
+                    backgroundColor: colors
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+    }
+
+    // Scatter plot avec Plotly
+    if (scatterData && scatterData.length > 0) {
+        const trace = {
+            x: scatterData.map(d => d.mobility_radius_km),
+            y: scatterData.map(d => d.recharge_amount_fcfa),
+            mode: 'markers',
+            type: 'scatter',
+            marker: {
+                color: scatterData.map(d => d.wealth_index),
+                colorscale: 'RdYlGn',
+                size: 8,
+                colorbar: { title: 'Indice' }
+            }
+        };
+        Plotly.newPlot('scatterPlot', [trace], {
+            xaxis: { title: 'Rayon de mobilité (km)' },
+            yaxis: { title: 'Montant recharges (FCFA)' },
+            margin: { t: 20 }
+        });
+    }
+
+    // Graphique régional
+    if (regionalData && regionalData.length > 0) {
+        new Chart(document.getElementById('regionalChart'), {
+            type: 'bar',
+            data: {
+                labels: regionalData.map(d => d.region),
+                datasets: [{
+                    label: 'Indice de richesse',
+                    data: regionalData.map(d => d.wealth_mean),
+                    backgroundColor: regionalData.map(d => 
+                        d.poverty_rate > 50 ? '#dc3545' : 
+                        d.poverty_rate > 30 ? '#ffc107' : '#198754'
+                    )
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+    }
+</script>
+{% endblock %}

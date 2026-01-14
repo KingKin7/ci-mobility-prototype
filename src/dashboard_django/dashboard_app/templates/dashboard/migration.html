@@ -1,0 +1,197 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block title %}Migration - Dashboard Mobilité CI{% endblock %}
+{% block page_title %}🚶 Analyse des Migrations{% endblock %}
+
+{% block content %}
+<!-- Métriques -->
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card metric-card bg-primary text-white">
+            <div class="card-body text-center">
+                <h6>Total migrations</h6>
+                <h2>{{ stats.total_migrations|default:0 }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card metric-card bg-info text-white">
+            <div class="card-body text-center">
+                <h6>Distance moyenne</h6>
+                <h2>{{ stats.avg_distance|default:0 }} km</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card metric-card bg-warning text-dark">
+            <div class="card-body text-center">
+                <h6>Durée moyenne séjour</h6>
+                <h2>{{ stats.avg_duration|default:0 }} jours</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card metric-card bg-success text-white">
+            <div class="card-body text-center">
+                <h6>Taux de retour</h6>
+                <h2>{{ stats.return_rate|default:0 }}%</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Graphiques ligne 1 -->
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Types de migration</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="typeChart" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Distribution des distances</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="distanceChart" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Corridors migratoires -->
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">🔄 Top 15 des corridors migratoires</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="corridorChart" height="250"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Matrice O-D -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">📊 Matrice Origine-Destination par région</h5>
+                <a href="/api/dataset/migration/?limit=10000" class="btn btn-sm btn-outline-primary">
+                    <i class="bi bi-download"></i> Télécharger
+                </a>
+            </div>
+            <div class="card-body">
+                <div id="odMatrix" style="height: 500px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Données
+    const typeData = {{ stats.type_distribution|safe }};
+    const corridorData = {{ stats.corridors|safe }};
+    const odMatrix = {{ stats.od_matrix|safe }};
+    const distanceData = {{ stats.distance_distribution|safe }};
+
+    // Graphique des types de migration
+    if (typeData && typeData.length > 0) {
+        new Chart(document.getElementById('typeChart'), {
+            type: 'doughnut',
+            data: {
+                labels: typeData.map(d => d.type),
+                datasets: [{
+                    data: typeData.map(d => d.count),
+                    backgroundColor: [
+                        '#FF6B00', '#0d6efd', '#198754', '#ffc107', 
+                        '#dc3545', '#6c757d', '#0dcaf0', '#6610f2'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'right' }
+                }
+            }
+        });
+    }
+
+    // Graphique des distances
+    if (distanceData && distanceData.length > 0) {
+        new Chart(document.getElementById('distanceChart'), {
+            type: 'bar',
+            data: {
+                labels: distanceData.map(d => d.bin),
+                datasets: [{
+                    label: 'Nombre de migrations',
+                    data: distanceData.map(d => d.count),
+                    backgroundColor: '#FF6B00'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: { title: { display: true, text: 'Distance (km)' } }
+                }
+            }
+        });
+    }
+
+    // Graphique des corridors
+    if (corridorData && corridorData.length > 0) {
+        new Chart(document.getElementById('corridorChart'), {
+            type: 'bar',
+            data: {
+                labels: corridorData.map(d => d.corridor),
+                datasets: [{
+                    label: 'Migrations',
+                    data: corridorData.map(d => d.count),
+                    backgroundColor: '#FF6B00',
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+    }
+
+    // Matrice O-D avec Plotly
+    if (odMatrix && odMatrix.regions) {
+        const heatmapData = [{
+            z: odMatrix.data,
+            x: odMatrix.regions,
+            y: odMatrix.index,
+            type: 'heatmap',
+            colorscale: 'YlOrRd',
+            hoverongaps: false
+        }];
+        
+        Plotly.newPlot('odMatrix', heatmapData, {
+            title: 'Flux migratoires entre régions',
+            xaxis: { title: 'Région de destination', tickangle: -45 },
+            yaxis: { title: 'Région d\'origine' },
+            margin: { l: 150, b: 100 }
+        });
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,242 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+
+{% block title %}Carte - Dashboard Mobilité CI{% endblock %}
+{% block page_title %}🗺️ Carte Interactive{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+<style>
+    #map { height: 600px; border-radius: 10px; }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Contrôles -->
+<div class="row mb-4">
+    <div class="col-md-4">
+        <label for="vizType" class="form-label">Type de visualisation</label>
+        <select id="vizType" class="form-select" onchange="updateMap()">
+            <option value="density">Densité par localité</option>
+            <option value="heatmap">Carte de chaleur</option>
+            <option value="points">Points individuels</option>
+        </select>
+    </div>
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-light">
+                    <div class="card-body text-center py-2">
+                        <h6 class="mb-0">📍 Localités</h6>
+                        <h4 class="mb-0">{{ map_data.stats.localities|default:0 }}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light">
+                    <div class="card-body text-center py-2">
+                        <h6 class="mb-0">🗺️ Régions</h6>
+                        <h4 class="mb-0">{{ map_data.stats.regions|default:0 }}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light">
+                    <div class="card-body text-center py-2">
+                        <h6 class="mb-0">🏛️ Départements</h6>
+                        <h4 class="mb-0">{{ map_data.stats.departments|default:0 }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Carte -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body p-0">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Légende -->
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h6>📌 Légende</h6>
+                <div class="d-flex gap-4">
+                    <span><i class="bi bi-circle-fill text-primary"></i> Faible densité</span>
+                    <span><i class="bi bi-circle-fill text-warning"></i> Densité moyenne</span>
+                    <span><i class="bi bi-circle-fill text-danger"></i> Forte densité</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+
+<script>
+    // Données
+    const localityPoints = {{ map_data.locality_points|safe }};
+    const samplePoints = {{ map_data.sample_points|safe }};
+    const mapCenter = {{ map_data.center|safe }};
+
+    // Initialiser la carte
+    const map = L.map('map').setView([mapCenter.lat, mapCenter.lon], 6);
+    
+    // Couche de base
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+        maxZoom: 18
+    }).addTo(map);
+
+    // Groupes de couches
+    let currentLayer = null;
+    let heatLayer = null;
+    let markersCluster = null;
+
+    // Fonction pour obtenir la couleur selon la densité
+    function getColor(count) {
+        const max = Math.max(...localityPoints.map(p => p.user_id || 0));
+        const ratio = count / max;
+        if (ratio > 0.7) return '#dc3545';
+        if (ratio > 0.3) return '#ffc107';
+        return '#0d6efd';
+    }
+
+    // Fonction pour obtenir le rayon selon la densité
+    function getRadius(count) {
+        return Math.max(8, Math.min(30, Math.sqrt(count) * 2));
+    }
+
+    // Afficher la densité par localité
+    function showDensity() {
+        clearLayers();
+        
+        if (!localityPoints || localityPoints.length === 0) return;
+
+        currentLayer = L.layerGroup();
+        
+        localityPoints.forEach(point => {
+            if (point.home_lat && point.home_lon) {
+                const circle = L.circleMarker([point.home_lat, point.home_lon], {
+                    radius: getRadius(point.user_id || 1),
+                    fillColor: getColor(point.user_id || 1),
+                    color: '#fff',
+                    weight: 2,
+                    fillOpacity: 0.7
+                });
+                
+                circle.bindPopup(`
+                    <strong>${point.locality || 'Inconnu'}</strong><br>
+                    Utilisateurs: ${point.user_id || 0}
+                `);
+                
+                currentLayer.addLayer(circle);
+            }
+        });
+        
+        currentLayer.addTo(map);
+    }
+
+    // Afficher la heatmap
+    function showHeatmap() {
+        clearLayers();
+        
+        if (!samplePoints || samplePoints.length === 0) return;
+
+        const heatData = samplePoints
+            .filter(p => p.home_lat && p.home_lon)
+            .map(p => [p.home_lat, p.home_lon, 1]);
+        
+        heatLayer = L.heatLayer(heatData, {
+            radius: 25,
+            blur: 15,
+            maxZoom: 10,
+            gradient: {0.4: 'blue', 0.6: 'cyan', 0.7: 'lime', 0.8: 'yellow', 1: 'red'}
+        }).addTo(map);
+    }
+
+    // Afficher les points individuels
+    function showPoints() {
+        clearLayers();
+        
+        if (!samplePoints || samplePoints.length === 0) return;
+
+        markersCluster = L.markerClusterGroup({
+            chunkedLoading: true,
+            spiderfyOnMaxZoom: true,
+            showCoverageOnHover: false,
+            maxClusterRadius: 50
+        });
+
+        samplePoints.forEach(point => {
+            if (point.home_lat && point.home_lon) {
+                const marker = L.circleMarker([point.home_lat, point.home_lon], {
+                    radius: 5,
+                    fillColor: '#FF6B00',
+                    color: '#fff',
+                    weight: 1,
+                    fillOpacity: 0.8
+                });
+                
+                if (point.locality) {
+                    marker.bindPopup(`<strong>${point.locality}</strong>`);
+                }
+                
+                markersCluster.addLayer(marker);
+            }
+        });
+
+        map.addLayer(markersCluster);
+    }
+
+    // Nettoyer les couches
+    function clearLayers() {
+        if (currentLayer) {
+            map.removeLayer(currentLayer);
+            currentLayer = null;
+        }
+        if (heatLayer) {
+            map.removeLayer(heatLayer);
+            heatLayer = null;
+        }
+        if (markersCluster) {
+            map.removeLayer(markersCluster);
+            markersCluster = null;
+        }
+    }
+
+    // Mettre à jour la carte
+    function updateMap() {
+        const vizType = document.getElementById('vizType').value;
+        
+        switch(vizType) {
+            case 'density':
+                showDensity();
+                break;
+            case 'heatmap':
+                showHeatmap();
+                break;
+            case 'points':
+                showPoints();
+                break;
+        }
+    }
+
+    // Affichage initial
+    showDensity();
+</script>
+{% endblock %}
