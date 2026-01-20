@@ -1,0 +1,501 @@
+user_id,timestamp,origin_locality,origin_region,current_locality,current_region,origin_lat,origin_lon,current_lat,current_lon,residence_duration_days,movement_type,is_return_migration,previous_locations,distance_km
+c108cb95263d,2024-01-22T00:00:00,Samatiguila,Denguélé,Kouibly,Montagnes,9.884765,-7.602428,7.23652,-7.383465,53,temporary_stay,False,[np.str_('Samatiguila')],295.5
+130675e6a9a2,2024-01-25T00:00:00,Gagnoa,Gôh-Djiboua,Bako,Denguélé,6.132813,-6.038465,8.97569,-7.635612,73,seasonal_agriculture,False,[np.str_('Gagnoa')],361.8
+74e06ce028dc,2024-01-21T00:00:00,Gbongaha,Denguélé,Kanakono,Savanes,9.284842,-7.107013,10.375961,-6.214064,186,work_migration,False,[np.str_('Gbongaha')],155.9
+b48adeb1558f,2024-01-18T00:00:00,Abidjan-Ville,Abidjan,Seguelon,Denguélé,5.314204,-4.037723,9.287877,-6.948145,129,work_migration,False,[np.str_('Abidjan-Ville')],546.1
+0e8d5f0d7120,2024-01-19T00:00:00,Abidjan-Ville,Abidjan,Songon,Abidjan,5.241764,-4.09366,5.282631,-4.228893,24,circular_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Fresco')]",15.6
+d4ae04e96f5f,2024-01-24T00:00:00,Daloa,Sassandra-Marahoué,Saioua,Sassandra-Marahoué,7.086791,-6.578226,6.34777,-6.229568,213,education_migration,True,"[np.str_('Daloa'), np.str_('Anyama')]",90.7
+3867c988fcda,2024-01-04T00:00:00,Assuefry,Zanzan,Foumbolo,ValléeduBandama,7.755657,-3.029997,8.719732,-4.790475,35,circular_migration,False,[np.str_('Assuefry')],221.4
+29e907b59f97,2024-01-26T00:00:00,Sangouine,Montagnes,Yakasse-Attobrou,Lagunes,7.491395,-7.815164,5.87823,-3.631191,361,work_migration,False,[np.str_('Sangouine')],495.7
+c79c283f8cc3,2024-01-13T00:00:00,Man,Montagnes,Lakota,Gôh-Djiboua,7.350592,-7.549818,5.798302,-5.831757,115,work_migration,False,[np.str_('Man')],256.5
+5b1cfcff350c,2024-01-29T00:00:00,Dabou,Lagunes,Gbonne,Montagnes,5.493814,-4.71597,7.647639,-7.25503,13,circular_migration,False,[np.str_('Dabou')],368.8
+9fff59f28a9f,2024-01-26T00:00:00,Abidjan-Ville,Abidjan,Kanakono,Savanes,5.433374,-4.071251,10.485469,-6.222062,113,work_migration,False,[np.str_('Abidjan-Ville')],609.6
+ad03025b9861,2024-01-18T00:00:00,Korhogo,Savanes,Botro,ValléeduBandama,9.507529,-5.632245,7.846052,-5.229585,337,work_migration,False,[np.str_('Korhogo')],190.0
+fbe404aa2049,2024-01-13T00:00:00,Abidjan-Ville,Abidjan,Dimbokro,Lacs,5.382375,-4.000836,6.73259,-4.807095,36,circular_migration,False,[np.str_('Abidjan-Ville')],174.6
+ac53f30f9da0,2024-01-14T00:00:00,San-Pedro,Bas-Sassandra,Agou,Lagunes,5.138396,-6.36853,5.863647,-3.949446,335,work_migration,False,[np.str_('San-Pedro')],279.6
+eae869c88e55,2024-01-03T00:00:00,Tioroniaradougou,Savanes,Koumbala,Savanes,9.315947,-5.657691,9.419347,-5.308145,25,temporary_stay,False,[np.str_('Tioroniaradougou')],40.0
+a3cda84bc6d0,2024-01-15T00:00:00,Korhogo,Savanes,Seguelon,Denguélé,9.648343,-5.779076,9.120645,-6.826416,105,seasonal_agriculture,False,[np.str_('Korhogo')],129.0
+cf163be0221b,2024-01-16T00:00:00,M'batto,Lacs,Ettrokro,Lacs,6.347282,-4.5077,7.369125,-3.569228,198,work_migration,False,"[np.str_(""M'batto"")]",153.8
+66530d59866e,2024-01-20T00:00:00,Issia,Sassandra-Marahoué,Samatiguila,Denguélé,6.434043,-6.735897,9.800679,-7.598747,320,work_migration,False,[np.str_('Issia')],386.2
+50cbb998b960,2024-01-21T00:00:00,Abidjan-Ville,Abidjan,Dioulatiedougou,Denguélé,5.303652,-4.114499,9.058134,-7.322079,31,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],547.2
+b9d39c94e850,2024-01-09T00:00:00,Abidjan-Ville,Abidjan,Toumodi,Lacs,5.431847,-3.972552,6.380344,-4.976666,50,temporary_stay,False,[np.str_('Abidjan-Ville')],153.2
+9ff74bf53121,2024-01-29T00:00:00,Abidjan-Ville,Abidjan,Koun-Fao,Zanzan,5.3404,-4.051851,7.409756,-3.348746,125,permanent_relocation,False,[np.str_('Abidjan-Ville')],242.9
+9e9b9cb23be9,2024-01-25T00:00:00,Boundiali,Savanes,Tortiya,ValléeduBandama,9.63937,-6.233093,8.735072,-5.657553,143,education_migration,False,[np.str_('Boundiali')],118.8
+d7ad7532cd72,2024-01-03T00:00:00,Abidjan-Ville,Abidjan,Gueyo,Bas-Sassandra,5.386535,-4.041382,5.6511,-6.153132,264,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",235.6
+f08fbf78ec97,2024-01-03T00:00:00,Agou,Lagunes,Tengréla,Savanes,5.890096,-3.965933,10.553997,-6.499307,61,seasonal_agriculture,False,[np.str_('Agou')],588.8
+73971fa018eb,2024-01-10T00:00:00,Bouake,ValléeduBandama,Yakasse-Attobrou,Lagunes,7.686161,-5.085776,6.133065,-3.492705,203,work_migration,False,[np.str_('Bouake')],246.5
+e16c09092c99,2024-01-16T00:00:00,Korhogo,Savanes,Daloa,Sassandra-Marahoué,9.586577,-5.592292,6.676109,-6.36781,130,education_migration,True,"[np.str_('Korhogo'), np.str_('Bingerville')]",334.7
+e26806837611,2024-01-24T00:00:00,Daloa,Sassandra-Marahoué,Odienné,Denguélé,6.704296,-6.16516,9.580254,-7.638608,155,education_migration,True,"[np.str_('Daloa'), np.str_('Abidjan-Ville')]",358.6
+df44ac05383d,2024-01-25T00:00:00,Yamoussoukro,Yamoussoukro,Seguelon,Denguélé,6.677063,-5.26975,9.124107,-6.815229,220,permanent_relocation,True,"[np.str_('Yamoussoukro'), np.str_('Bingerville')]",320.9
+84c0e55744de,2024-01-08T00:00:00,Yamoussoukro,Yamoussoukro,Daloa,Sassandra-Marahoué,6.734086,-5.291259,7.026335,-6.658544,106,work_migration,False,[np.str_('Yamoussoukro')],154.4
+e6d224b0fa61,2024-01-17T00:00:00,Abengourou,Comoé,Bediala,Sassandra-Marahoué,6.49528,-3.464238,7.083449,-6.164922,210,work_migration,True,"[np.str_('Abengourou'), np.str_('Bingerville')]",305.3
+59d6ca00e169,2024-01-07T00:00:00,Abidjan-Ville,Abidjan,Bodokro,ValléeduBandama,5.427151,-4.140984,7.817498,-5.536123,252,permanent_relocation,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",307.2
+49030f7ee67a,2024-01-05T00:00:00,Sinematiali,Savanes,Santama-Sokoro,ValléeduBandama,9.578635,-5.344244,8.056281,-4.579593,149,work_migration,False,[np.str_('Sinematiali')],189.0
+10eed2a57e20,2024-01-10T00:00:00,Bouake,ValléeduBandama,Aboisso,Comoé,7.562521,-4.851869,5.391157,-3.144166,97,seasonal_agriculture,False,[np.str_('Bouake')],306.4
+7ff473a469f8,2024-01-10T00:00:00,Yamoussoukro,Yamoussoukro,Guiembe,Savanes,6.913854,-5.370287,9.239126,-5.907485,183,work_migration,False,[np.str_('Yamoussoukro')],265.2
+b9980543b368,2024-01-04T00:00:00,Affery,Lagunes,Taabo,Lagunes,6.219849,-3.959108,6.005842,-4.883227,52,temporary_stay,True,"[np.str_('Affery'), np.str_('Bingerville')]",104.9
+c7daa6bc9b2d,2024-01-28T00:00:00,Tiebissou,Lacs,Nielle,Savanes,7.158285,-5.357305,10.411533,-5.774975,250,work_migration,False,[np.str_('Tiebissou')],364.6
+9d0cd1831588,2024-01-11T00:00:00,Saioua,Sassandra-Marahoué,Lakota,Gôh-Djiboua,6.567397,-6.16307,5.639631,-5.84858,133,work_migration,False,[np.str_('Saioua')],108.9
+1107d4497b8c,2024-01-17T00:00:00,Kaniasso,Denguélé,Sarhala,Woroba,9.713501,-7.386993,8.425344,-6.278269,252,work_migration,False,[np.str_('Kaniasso')],188.0
+024106ab104d,2024-01-30T00:00:00,Bouake,ValléeduBandama,Niable,Comoé,7.90886,-4.61822,6.724836,-3.223532,12,temporary_stay,True,"[np.str_('Bouake'), np.str_('Anyama')]",202.5
+b2f3c244f298,2024-01-26T00:00:00,Abidjan-Ville,Abidjan,Guiglo,Montagnes,5.417016,-4.082521,6.676159,-7.76133,307,work_migration,False,[np.str_('Abidjan-Ville')],430.2
+dc5148c21667,2024-01-24T00:00:00,Yamoussoukro,Yamoussoukro,Bouake,ValléeduBandama,6.829922,-5.175964,7.81828,-5.012083,122,permanent_relocation,True,"[np.str_('Yamoussoukro'), np.str_('Abidjan-Ville')]",111.4
+3d368d77d4e1,2024-01-29T00:00:00,Gagnoa,Gôh-Djiboua,Borotou,Woroba,6.034062,-5.953114,8.635427,-7.564018,78,seasonal_agriculture,False,[np.str_('Gagnoa')],339.5
+94a286f3259d,2024-01-12T00:00:00,Man,Montagnes,Gagnoa,Gôh-Djiboua,7.428431,-7.743107,6.02271,-5.802452,21,temporary_stay,False,[np.str_('Man')],265.2
+4e1c040faed6,2024-01-28T00:00:00,Logouale,Montagnes,Sakassou,ValléeduBandama,7.067331,-7.639299,7.61331,-5.350515,94,seasonal_agriculture,False,[np.str_('Logouale')],259.6
+3b6e3784424f,2024-01-28T00:00:00,Gagnoa,Gôh-Djiboua,Komborodougou,Savanes,6.0167,-5.98806,9.381401,-5.428937,115,seasonal_agriculture,True,"[np.str_('Gagnoa'), np.str_('Anyama')]",379.2
+e56df4f5f97e,2024-01-27T00:00:00,Djibrosso,Woroba,Kounahiri,Woroba,8.898206,-7.107071,7.996574,-5.57921,119,seasonal_agriculture,False,[np.str_('Djibrosso')],195.7
+3a3e171b8e77,2024-01-08T00:00:00,Man,Montagnes,Guitry,Gôh-Djiboua,7.383251,-7.561012,5.494753,-5.047031,117,work_migration,False,[np.str_('Man')],348.2
+e70cc45f7d29,2024-01-13T00:00:00,Doropo,Zanzan,Adzope,Lagunes,9.768803,-3.141631,6.283711,-3.759811,213,work_migration,False,[np.str_('Doropo')],393.5
+92fc4a7e292d,2024-01-25T00:00:00,Abidjan-Ville,Abidjan,Dioulatiedougou,Denguélé,5.448662,-4.159147,9.118425,-7.172688,34,temporary_stay,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",526.3
+fb14570956fa,2024-01-25T00:00:00,Yamoussoukro,Yamoussoukro,Bouafle,Sassandra-Marahoué,6.757484,-5.189565,7.018775,-5.748316,154,education_migration,True,"[np.str_('Yamoussoukro'), np.str_('Abidjan-Ville')]",68.2
+80a6fbaf8d44,2024-01-25T00:00:00,Abidjan-Ville,Abidjan,Akoupe,Lagunes,5.400715,-4.019074,6.449915,-3.976588,40,temporary_stay,False,[np.str_('Abidjan-Ville')],116.8
+59786e1ee292,2024-01-09T00:00:00,Diegonefla,Gôh-Djiboua,Tengréla,Savanes,6.335602,-5.721649,10.66731,-6.305544,12,circular_migration,True,"[np.str_('Diegonefla'), np.str_('Abidjan-Ville')]",485.9
+45ca10ab210c,2024-01-03T00:00:00,Abidjan-Ville,Abidjan,Sandégué,Zanzan,5.255464,-4.090993,8.05147,-3.957207,164,work_migration,False,[np.str_('Abidjan-Ville')],311.3
+341e0b44c4e9,2024-01-03T00:00:00,Abidjan-Ville,Abidjan,Kouto,Savanes,5.248058,-4.044147,10.214918,-6.48372,69,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],614.2
+7c527e4e06d3,2024-01-01T00:00:00,Grand-Lahou,Lagunes,Bako,Denguélé,5.167601,-5.035508,9.312402,-7.607339,340,work_migration,True,"[np.str_('Grand-Lahou'), np.str_('Bingerville')]",541.2
+e834ce0eb984,2024-01-06T00:00:00,Bouake,ValléeduBandama,Tiassalé,Lagunes,7.923988,-4.975519,6.003041,-4.643163,177,permanent_relocation,True,"[np.str_('Bouake'), np.str_('Anyama')]",216.7
+74db6ca35397,2024-01-07T00:00:00,Abidjan-Ville,Abidjan,Satama-Sokoura,ValléeduBandama,5.313175,-3.920913,7.928129,-4.376181,29,circular_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",295.1
+7fd2d10a03f9,2024-01-14T00:00:00,Bouake,ValléeduBandama,Kouassi-Datekro,Zanzan,7.649583,-5.04293,7.810288,-3.69987,98,permanent_relocation,False,[np.str_('Bouake')],149.1
+f23a3e39d23f,2024-01-25T00:00:00,Gbonne,Montagnes,Tabou,Bas-Sassandra,7.716712,-7.439378,4.581053,-7.398976,133,education_migration,False,[np.str_('Gbonne')],348.7
+8e5812244690,2024-01-26T00:00:00,Korhogo,Savanes,Djibrosso,Woroba,9.698297,-5.769687,8.951856,-7.047693,219,work_migration,False,[np.str_('Korhogo')],163.0
+936e08915e33,2024-01-18T00:00:00,Abidjan-Ville,Abidjan,Dimbokro,Lacs,5.28421,-3.82527,6.80698,-4.64812,75,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],192.2
+7453e6acbabd,2024-01-22T00:00:00,Saioua,Sassandra-Marahoué,Grand-Lahou,Lagunes,6.389184,-6.283235,5.21643,-4.874229,29,temporary_stay,True,"[np.str_('Saioua'), np.str_('Anyama')]",203.2
+c6fd020d20df,2024-01-13T00:00:00,Seguelon,Denguélé,San-Pedro,Bas-Sassandra,9.265445,-6.996945,4.986995,-6.672582,260,work_migration,False,[np.str_('Seguelon')],477.1
+625a3f2d62a2,2024-01-20T00:00:00,Ouangolodougou,Savanes,Santama-Sokoro,ValléeduBandama,10.097669,-5.144373,8.122678,-4.491126,29,temporary_stay,False,[np.str_('Ouangolodougou')],231.0
+b5b2f2aba118,2024-01-03T00:00:00,Abidjan-Ville,Abidjan,Djibrosso,Woroba,5.246938,-4.091483,8.743837,-7.157115,347,work_migration,False,[np.str_('Abidjan-Ville')],515.4
+6883b0c9c975,2024-01-26T00:00:00,Abidjan-Ville,Abidjan,Oumé,Gôh-Djiboua,5.260566,-3.832027,6.375704,-5.48043,60,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",220.5
+0f8aae85a73f,2024-01-25T00:00:00,Yamoussoukro,Yamoussoukro,Worofla,Woroba,6.559772,-5.292928,8.506403,-7.152553,57,seasonal_agriculture,True,"[np.str_('Yamoussoukro'), np.str_('Bingerville')]",298.1
+eeac9feea4d3,2024-01-13T00:00:00,Abidjan-Ville,Abidjan,Guitry,Gôh-Djiboua,5.297977,-4.090204,5.325891,-5.385051,51,temporary_stay,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",143.4
+d6eab033feab,2024-01-24T00:00:00,Abengourou,Comoé,Tioroniaradougou,Savanes,6.710194,-3.744689,9.305963,-5.71567,207,work_migration,False,[np.str_('Abengourou')],361.1
+afe787434fbc,2024-01-13T00:00:00,San-Pedro,Bas-Sassandra,Soubre,Bas-Sassandra,4.890794,-6.631977,5.746167,-6.33185,362,work_migration,True,"[np.str_('San-Pedro'), np.str_('Abidjan-Ville')]",100.8
+d1f46d84c41c,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Botro,ValléeduBandama,5.284955,-3.98079,7.890654,-5.40006,336,permanent_relocation,False,[np.str_('Abidjan-Ville')],329.4
+7aa84fe6afa1,2024-01-06T00:00:00,Abidjan-Ville,Abidjan,Kolia,Savanes,5.289654,-4.096918,9.840434,-6.716154,110,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",582.6
+e5f83403806b,2024-01-23T00:00:00,Daloa,Sassandra-Marahoué,Bonoua,Comoé,7.003501,-6.842975,5.492038,-3.452311,22,circular_migration,False,[np.str_('Daloa')],410.7
+23ccc7c039c5,2024-01-21T00:00:00,Facobly,Montagnes,Rubino,Lagunes,7.597474,-7.068529,6.183224,-4.286538,295,work_migration,False,[np.str_('Facobly')],345.0
+03c561560a91,2024-01-25T00:00:00,Abidjan-Ville,Abidjan,Kongasso,Woroba,5.374717,-4.061104,7.78591,-5.990046,98,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],342.5
+9f70039f4abd,2024-01-14T00:00:00,Daloa,Sassandra-Marahoué,Alépé,Lagunes,6.698592,-6.463415,5.451874,-3.669523,50,temporary_stay,False,[np.str_('Daloa')],338.6
+a45b91efa973,2024-01-02T00:00:00,Korhogo,Savanes,Tanda,Zanzan,9.593428,-5.752748,7.790739,-3.145719,47,temporary_stay,False,[np.str_('Korhogo')],349.7
+9d3e99fd06d9,2024-01-28T00:00:00,Seguelon,Denguélé,Brobo,ValléeduBandama,9.256632,-6.857644,7.714294,-4.733139,220,permanent_relocation,False,[np.str_('Seguelon')],289.8
+81bc826a9df8,2024-01-18T00:00:00,Bouake,ValléeduBandama,Grabo,Bas-Sassandra,7.909987,-5.012029,5.214959,-7.202467,100,seasonal_agriculture,False,[np.str_('Bouake')],385.2
+549680a19ec4,2024-01-21T00:00:00,Abidjan-Ville,Abidjan,Vavoua,Sassandra-Marahoué,5.399598,-4.00036,7.6583,-6.655151,76,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",386.1
+d1b746ba0028,2024-01-06T00:00:00,Sassandra,Bas-Sassandra,Koun-Fao,Zanzan,5.592768,-6.185686,7.594389,-3.353233,44,seasonal_agriculture,False,[np.str_('Sassandra')],383.9
+9d97433555f9,2024-01-02T00:00:00,San-Pedro,Bas-Sassandra,Tiebissou,Lacs,4.859343,-6.535682,6.94157,-4.876157,45,circular_migration,False,[np.str_('San-Pedro')],295.5
+8374584cbae0,2024-01-26T00:00:00,Abidjan-Ville,Abidjan,Touba,Woroba,5.293962,-4.063717,7.942021,-7.697958,24,circular_migration,False,[np.str_('Abidjan-Ville')],497.8
+2ef53a04efd4,2024-01-08T00:00:00,Man,Montagnes,Foumbolo,ValléeduBandama,7.529684,-7.601075,8.649178,-4.943211,267,permanent_relocation,False,[np.str_('Man')],318.0
+a81c04164297,2024-01-07T00:00:00,Abidjan-Ville,Abidjan,Sangouine,Montagnes,5.448416,-4.042011,7.298923,-7.732169,160,permanent_relocation,False,[np.str_('Abidjan-Ville')],456.7
+698337690138,2024-01-06T00:00:00,Bin-Houye,Montagnes,Tiebissou,Lacs,6.69406,-8.356073,7.087152,-5.182652,20,circular_migration,True,"[np.str_('Bin-Houye'), np.str_('Anyama')]",353.0
+c28001a1d212,2024-01-17T00:00:00,Gueyo,Bas-Sassandra,Ayame,Comoé,5.354473,-6.033771,5.929462,-3.289315,334,work_migration,True,"[np.str_('Gueyo'), np.str_('Abidjan-Ville')]",310.3
+01ead6a42165,2024-01-24T00:00:00,Bouake,ValléeduBandama,Toumodi,Lacs,7.709808,-5.02325,6.330427,-4.87285,185,work_migration,False,[np.str_('Bouake')],154.3
+30805f065058,2024-01-10T00:00:00,Bouake,ValléeduBandama,Agnibilekro,Comoé,7.894364,-4.999986,7.004983,-3.128569,130,permanent_relocation,True,"[np.str_('Bouake'), np.str_('Anyama')]",228.8
+860aaba6d73d,2024-01-02T00:00:00,Daloa,Sassandra-Marahoué,Tiebissou,Lacs,6.750602,-6.243591,7.024556,-5.072045,263,permanent_relocation,False,[np.str_('Daloa')],132.9
+b39b5ac8a248,2024-01-21T00:00:00,Bouake,ValléeduBandama,Ouragahio,Gôh-Djiboua,7.897534,-4.801795,6.314822,-5.895726,9,temporary_stay,False,[np.str_('Bouake')],213.4
+9450b8c3f388,2024-01-10T00:00:00,Ferkessedougou,Savanes,Attiégoukaro,Yamoussoukro,9.838261,-5.004897,6.849826,-5.185966,309,work_migration,False,[np.str_('Ferkessedougou')],332.9
+de866d320949,2024-01-07T00:00:00,Abengourou,Comoé,Tanda,Zanzan,6.275968,-3.219177,7.715176,-3.296578,18,temporary_stay,False,[np.str_('Abengourou')],160.3
+cc06e8768e1a,2024-01-19T00:00:00,Abidjan-Ville,Abidjan,Botro,ValléeduBandama,5.413116,-3.943776,7.865511,-5.306214,124,work_migration,False,[np.str_('Abidjan-Ville')],311.5
+331bbd8b6833,2024-01-24T00:00:00,Abidjan-Ville,Abidjan,Hire,Gôh-Djiboua,5.463094,-4.02075,6.171312,-5.348921,9,circular_migration,False,[np.str_('Abidjan-Ville')],166.7
+746dcb023d43,2024-01-18T00:00:00,Abidjan-Ville,Abidjan,Gueyo,Bas-Sassandra,5.401188,-3.996217,5.763956,-6.189767,15,temporary_stay,False,[np.str_('Abidjan-Ville')],246.1
+41995a1ff1af,2024-01-17T00:00:00,Man,Montagnes,Bondoukou,Zanzan,7.423911,-7.456992,8.358202,-3.153606,230,permanent_relocation,False,[np.str_('Man')],485.2
+ec855cc68ab8,2024-01-27T00:00:00,Abidjan-Ville,Abidjan,Tabou,Bas-Sassandra,5.253425,-3.848367,4.748206,-7.420452,98,work_migration,False,[np.str_('Abidjan-Ville')],399.7
+4731fd3d55df,2024-01-06T00:00:00,Abidjan-Ville,Abidjan,Tabou,Bas-Sassandra,5.403038,-3.973553,4.5474,-7.454939,324,permanent_relocation,False,[np.str_('Abidjan-Ville')],397.2
+9f173f94cf88,2024-01-23T00:00:00,Kaniasso,Denguélé,Bouna,Zanzan,9.848506,-7.380037,8.907823,-2.772877,18,circular_migration,True,"[np.str_('Kaniasso'), np.str_('Abidjan-Ville')]",516.1
+234cc68901b2,2024-01-04T00:00:00,Abidjan-Ville,Abidjan,M'Bahiakro,Lacs,5.448475,-3.987649,7.387355,-4.555402,122,work_migration,False,[np.str_('Abidjan-Ville')],224.5
+5cbb424a6d42,2024-01-11T00:00:00,Bouake,ValléeduBandama,Sinfra,Sassandra-Marahoué,7.850308,-4.897866,6.524047,-5.750066,350,work_migration,True,"[np.str_('Bouake'), np.str_('Abidjan-Ville')]",174.9
+3621702881e2,2024-01-17T00:00:00,Tiapoum,Comoé,Kaniasso,Denguélé,5.242418,-2.852792,9.996999,-7.504495,43,seasonal_agriculture,True,"[np.str_('Tiapoum'), np.str_('Abidjan-Ville')]",736.3
+c30871bcb558,2024-01-11T00:00:00,Korhogo,Savanes,Tiapoum,Comoé,9.642524,-5.581386,5.229695,-3.030513,18,circular_migration,False,[np.str_('Korhogo')],565.5
+90fcddc3850d,2024-01-16T00:00:00,Arrah,Lacs,Tengréla,Savanes,6.989351,-3.899828,10.608546,-6.653137,219,permanent_relocation,False,[np.str_('Arrah')],503.4
+cb9c869af13f,2024-01-29T00:00:00,Satama-Sokoura,ValléeduBandama,Méagui,Bas-Sassandra,7.832491,-4.414032,5.368538,-6.697446,168,education_migration,False,[np.str_('Satama-Sokoura')],372.4
+e07ee4665b8c,2024-01-28T00:00:00,Anyama,Abidjan,Massala,Woroba,5.604197,-3.972543,8.034524,-6.321535,298,work_migration,True,"[np.str_('Anyama'), np.str_('Bingerville')]",374.5
+52570f2c971e,2024-01-02T00:00:00,Abidjan-Ville,Abidjan,Gohitafla,Sassandra-Marahoué,5.453217,-3.97107,7.555398,-5.752925,115,permanent_relocation,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",305.6
+70dc6d51ee22,2024-01-24T00:00:00,Man,Montagnes,Dabou,Lagunes,7.290212,-7.622393,5.348437,-4.450775,41,seasonal_agriculture,True,"[np.str_('Man'), np.str_('Bingerville')]",411.7
+ebbe8b98dcff,2024-01-08T00:00:00,Abidjan-Ville,Abidjan,Korhogo,Savanes,5.276096,-4.011753,9.665899,-5.697152,166,work_migration,False,[np.str_('Abidjan-Ville')],522.3
+ec5614a2f3d4,2024-01-19T00:00:00,Bouake,ValléeduBandama,Zikisso,Gôh-Djiboua,7.906821,-5.091165,6.052797,-5.680363,107,seasonal_agriculture,False,[np.str_('Bouake')],216.2
+610f26ea8209,2024-01-18T00:00:00,San-Pedro,Bas-Sassandra,Kouassi-Datekro,Zanzan,5.0074,-6.544375,7.583961,-3.429051,45,seasonal_agriculture,False,[np.str_('San-Pedro')],447.9
+cea6bcc08f41,2024-01-23T00:00:00,Abidjan-Ville,Abidjan,Kaniasso,Denguélé,5.379984,-3.949662,9.840978,-7.519603,115,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],633.1
+414f412f8215,2024-01-29T00:00:00,Bouake,ValléeduBandama,Azaguie,Lagunes,7.690433,-5.083211,5.727868,-4.036118,358,work_migration,True,"[np.str_('Bouake'), np.str_('Abidjan-Ville')]",247.0
+fb9ed109e048,2024-01-01T00:00:00,Yamoussoukro,Yamoussoukro,Dioulatiedougou,Denguélé,6.980841,-5.403371,9.264429,-7.406905,181,permanent_relocation,False,[np.str_('Yamoussoukro')],336.3
+a4c1275c2a4b,2024-01-09T00:00:00,Abidjan-Ville,Abidjan,Jacqueville,Lagunes,5.396676,-3.938049,5.226158,-4.568862,234,permanent_relocation,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",72.4
+b97909f3e69b,2024-01-25T00:00:00,Yamoussoukro,Yamoussoukro,Satama-Sokoura,ValléeduBandama,6.647247,-5.360666,7.98755,-4.324364,218,work_migration,False,[np.str_('Yamoussoukro')],187.8
+c2e033ca4911,2024-01-23T00:00:00,Gagnoa,Gôh-Djiboua,Aboisso,Comoé,5.71245,-6.058614,5.396042,-3.259706,194,education_migration,False,[np.str_('Gagnoa')],311.8
+c52661696e3a,2024-01-27T00:00:00,San-Pedro,Bas-Sassandra,Gbeleban,Denguélé,4.84777,-6.355858,9.684839,-8.121182,71,seasonal_agriculture,False,[np.str_('San-Pedro')],572.0
+655739bf5d42,2024-01-04T00:00:00,Abidjan-Ville,Abidjan,Botro,ValléeduBandama,5.283788,-3.864056,8.079326,-5.351339,27,circular_migration,False,[np.str_('Abidjan-Ville')],351.6
+60373dcfc351,2024-01-27T00:00:00,Daloa,Sassandra-Marahoué,Guiembe,Savanes,6.616419,-6.226305,9.218954,-5.679989,214,work_migration,False,[np.str_('Daloa')],295.6
+861d7541a008,2024-01-13T00:00:00,Karakoro,Savanes,Alépé,Lagunes,9.345991,-5.535704,5.346563,-3.68463,38,seasonal_agriculture,False,[np.str_('Karakoro')],489.3
+32095e94b2c9,2024-01-02T00:00:00,Bouake,ValléeduBandama,Napieoledougou,Savanes,7.88809,-5.007305,9.289668,-5.436683,138,work_migration,False,[np.str_('Bouake')],162.8
+391029fdbb5d,2024-01-10T00:00:00,Abengourou,Comoé,Niable,Comoé,6.771929,-3.420533,6.742263,-3.3632,223,work_migration,False,[np.str_('Abengourou')],7.1
+23b0fd7e055d,2024-01-24T00:00:00,Abidjan-Ville,Abidjan,Nielle,Savanes,5.312313,-4.008513,10.464443,-5.569823,29,temporary_stay,False,[np.str_('Abidjan-Ville')],598.1
+49f7783f9218,2024-01-20T00:00:00,Biankouma,Montagnes,Gueyo,Bas-Sassandra,7.690812,-7.551249,5.694301,-6.217935,91,seasonal_agriculture,True,"[np.str_('Biankouma'), np.str_('Bingerville')]",266.4
+fbbb9366d41e,2024-01-23T00:00:00,Abidjan-Ville,Abidjan,Man,Montagnes,5.285428,-3.970024,7.433708,-7.509361,199,work_migration,False,[np.str_('Abidjan-Ville')],458.3
+23dd673d8c19,2024-01-20T00:00:00,Abidjan-Ville,Abidjan,Guiglo,Montagnes,5.382926,-3.955475,6.700752,-7.784302,330,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",448.0
+239f5e9eb43d,2024-01-08T00:00:00,Abidjan-Ville,Abidjan,Napieoledougou,Savanes,5.389696,-4.000368,9.259442,-5.587624,316,work_migration,False,[np.str_('Abidjan-Ville')],464.5
+a424a7cf2f78,2024-01-04T00:00:00,Daloa,Sassandra-Marahoué,Tiapoum,Comoé,6.692098,-6.492255,5.263098,-2.795144,31,seasonal_agriculture,True,"[np.str_('Daloa'), np.str_('Bingerville')]",438.6
+29965181f151,2024-01-20T00:00:00,M'bengue,Savanes,Gnamangui,Bas-Sassandra,10.189022,-6.065048,5.514764,-6.606829,350,work_migration,True,"[np.str_(""M'bengue""), np.str_('Abidjan-Ville')]",523.2
+641711e58c1c,2024-01-05T00:00:00,Abidjan-Ville,Abidjan,Yakasse-Attobrou,Lagunes,5.431178,-4.156883,6.030062,-3.509827,121,work_migration,False,[np.str_('Abidjan-Ville')],97.8
+8479227ba990,2024-01-21T00:00:00,Abidjan-Ville,Abidjan,Komborodougou,Savanes,5.425015,-4.112332,9.422037,-5.437225,31,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],467.8
+6adc9c1d4acc,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Bassawa,ValléeduBandama,5.445993,-4.012735,8.150228,-4.166763,91,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",301.2
+bd8d2fce632d,2024-01-21T00:00:00,Kouassikro,Lacs,Kongasso,Woroba,7.107695,-4.604754,7.80499,-6.055853,223,work_migration,False,[np.str_('Kouassikro')],177.8
+d99f563a4e1d,2024-01-02T00:00:00,Kaniasso,Denguélé,Bin-Houye,Montagnes,9.785594,-7.466414,6.681192,-8.231634,189,work_migration,False,[np.str_('Kaniasso')],355.3
+a8912fb6de94,2024-01-24T00:00:00,Gagnoa,Gôh-Djiboua,Touba,Woroba,5.962266,-6.144585,8.139556,-7.706639,166,education_migration,False,[np.str_('Gagnoa')],297.2
+68b35334c889,2024-01-29T00:00:00,Korhogo,Savanes,M'bengue,Savanes,9.605617,-5.627498,10.103713,-6.122845,202,education_migration,False,[np.str_('Korhogo')],77.5
+6f27cdfe204c,2024-01-06T00:00:00,Abidjan-Ville,Abidjan,Prikro,Lacs,5.318337,-4.114607,7.960742,-4.063722,30,circular_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",293.9
+3d751749c093,2024-01-26T00:00:00,Abidjan-Ville,Abidjan,Djebonoua,ValléeduBandama,5.257784,-3.875144,7.550684,-5.068384,99,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",287.0
+9f057683f138,2024-01-12T00:00:00,Daloa,Sassandra-Marahoué,Diawala,Savanes,7.056533,-6.627691,10.090949,-5.470961,282,education_migration,False,[np.str_('Daloa')],360.6
+7fabb0969b29,2024-01-29T00:00:00,Abidjan-Ville,Abidjan,Bangolo,Montagnes,5.245334,-4.080983,6.993485,-7.719643,146,permanent_relocation,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",446.8
+e1d6bbcc0433,2024-01-30T00:00:00,Sipilou,Montagnes,Bassawa,ValléeduBandama,7.929488,-8.07727,8.137798,-4.068593,99,work_migration,False,[np.str_('Sipilou')],442.0
+97922d66aa78,2024-01-11T00:00:00,Abidjan-Ville,Abidjan,Niofoin,Savanes,5.419082,-4.022865,9.601357,-5.945974,38,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],511.1
+c2b86fec38c6,2024-01-22T00:00:00,Abidjan-Ville,Abidjan,Guiglo,Montagnes,5.4099,-4.026963,6.346804,-7.828701,191,education_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",433.2
+110bc6e0f6f4,2024-01-12T00:00:00,Abidjan-Ville,Abidjan,Komborodougou,Savanes,5.412627,-3.9965,9.447567,-5.457573,232,education_migration,False,[np.str_('Abidjan-Ville')],476.7
+0d53acf71548,2024-01-25T00:00:00,Napieoledougou,Savanes,Sinematiali,Savanes,9.273983,-5.412862,9.409625,-5.416269,185,education_migration,False,[np.str_('Napieoledougou')],15.1
+043d254fecb9,2024-01-01T00:00:00,Abidjan-Ville,Abidjan,Dabou,Lagunes,5.335057,-4.094067,5.365502,-4.585836,114,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],54.5
+f007bf941138,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Niofoin,Savanes,5.327726,-4.091732,9.875501,-6.044445,116,permanent_relocation,False,[np.str_('Abidjan-Ville')],549.6
+c203403c4ca0,2024-01-08T00:00:00,Abengourou,Comoé,Botro,ValléeduBandama,6.69481,-3.519034,7.796548,-5.350022,37,temporary_stay,True,"[np.str_('Abengourou'), np.str_('Bingerville')]",236.2
+3e8127d9f1f0,2024-01-12T00:00:00,San-Pedro,Bas-Sassandra,Kongasso,Woroba,5.033829,-6.729481,7.700768,-6.196781,350,permanent_relocation,False,[np.str_('San-Pedro')],302.3
+3b4412f2b5ac,2024-01-12T00:00:00,Abidjan-Ville,Abidjan,Gbeleban,Denguélé,5.456934,-4.079316,9.630463,-8.053088,23,temporary_stay,False,[np.str_('Abidjan-Ville')],638.1
+f7ef4adfb18d,2024-01-15T00:00:00,Mankono,Woroba,Korhogo,Savanes,8.086343,-6.158411,9.443809,-5.87305,231,permanent_relocation,False,[np.str_('Mankono')],154.2
+e8ef2712a7f0,2024-01-02T00:00:00,Kassere,Savanes,Satama-Sokoura,ValléeduBandama,9.815844,-6.27995,7.964712,-4.312643,80,seasonal_agriculture,False,[np.str_('Kassere')],298.5
+945d6f1e5e03,2024-01-18T00:00:00,Kaniasso,Denguélé,Bako,Denguélé,9.800223,-7.539939,8.961868,-7.667217,99,permanent_relocation,False,[np.str_('Kaniasso')],94.3
+689d681ab8c2,2024-01-26T00:00:00,Gagnoa,Gôh-Djiboua,Dianra,Woroba,6.133297,-5.763193,8.683578,-6.430963,47,temporary_stay,False,[np.str_('Gagnoa')],293.0
+c5bfba719eef,2024-01-10T00:00:00,Koonan,Woroba,Madinani,Denguélé,8.465729,-8.10721,9.627031,-7.179698,66,seasonal_agriculture,False,[np.str_('Koonan')],164.5
+fbc81562605c,2024-01-12T00:00:00,Bediala,Sassandra-Marahoué,Guiberoua,Gôh-Djiboua,7.025593,-6.355455,6.090472,-6.312504,181,permanent_relocation,False,[np.str_('Bediala')],104.1
+539563f1cff4,2024-01-28T00:00:00,San-Pedro,Bas-Sassandra,Zoukougbeu,Sassandra-Marahoué,5.135681,-6.589778,6.872164,-6.836602,314,work_migration,False,[np.str_('San-Pedro')],195.0
+7f0ff3e79d7b,2024-01-01T00:00:00,Korhogo,Savanes,Nielle,Savanes,9.665749,-5.499952,10.4275,-5.554076,192,work_migration,False,[np.str_('Korhogo')],84.9
+e72d4bb8febd,2024-01-15T00:00:00,Korhogo,Savanes,Logouale,Montagnes,9.484852,-5.602972,7.046284,-7.559276,111,seasonal_agriculture,False,[np.str_('Korhogo')],346.2
+6b1d994d484b,2024-01-16T00:00:00,Man,Montagnes,Ouelle,Lacs,7.571437,-7.493501,7.261468,-3.992889,32,temporary_stay,False,[np.str_('Man')],387.5
+151e670c547a,2024-01-27T00:00:00,Abengourou,Comoé,Duékoué,Montagnes,6.840963,-3.432177,6.511511,-7.291366,162,work_migration,False,[np.str_('Abengourou')],427.8
+a708710f908a,2024-01-09T00:00:00,Abidjan-Ville,Abidjan,Azaguie,Lagunes,5.349985,-4.006529,5.723424,-4.223811,249,education_migration,False,[np.str_('Abidjan-Ville')],48.0
+d29e92edd2a2,2024-01-15T00:00:00,Daloa,Sassandra-Marahoué,Azaguie,Lagunes,7.049312,-6.778368,5.679665,-4.130852,115,seasonal_agriculture,False,[np.str_('Daloa')],329.8
+73e0bc5d4451,2024-01-02T00:00:00,Dualla,Woroba,Grabo,Bas-Sassandra,8.384343,-6.418016,4.904145,-7.379781,82,seasonal_agriculture,False,[np.str_('Dualla')],401.3
+c3f0547ce0d0,2024-01-30T00:00:00,Gagnoa,Gôh-Djiboua,Gbonne,Montagnes,5.854812,-6.167928,7.678686,-7.286922,170,education_migration,False,[np.str_('Gagnoa')],237.5
+52c1d82fa2ad,2024-01-12T00:00:00,Divo,Gôh-Djiboua,Sakassou,ValléeduBandama,5.760883,-5.412588,7.344207,-5.228393,46,circular_migration,True,"[np.str_('Divo'), np.str_('Anyama')]",177.2
+49349c9532f1,2024-01-21T00:00:00,Séguéla,Woroba,Tiebissou,Lacs,8.25374,-6.694058,7.164649,-5.146666,227,education_migration,True,"[np.str_('Séguéla'), np.str_('Abidjan-Ville')]",209.1
+9536453dab2b,2024-01-14T00:00:00,Blolequin,Montagnes,Madinani,Denguélé,6.714412,-7.893372,9.781387,-7.089646,249,work_migration,False,[np.str_('Blolequin')],352.3
+c46844c11c85,2024-01-10T00:00:00,Abidjan-Ville,Abidjan,Bangolo,Montagnes,5.44522,-4.093182,7.041023,-7.091005,270,work_migration,False,[np.str_('Abidjan-Ville')],375.9
+253f53a6606f,2024-01-29T00:00:00,Doropo,Zanzan,Ouangolodougou,Savanes,9.658999,-3.170168,9.950117,-5.177997,20,circular_migration,False,[np.str_('Doropo')],222.4
+5cfb9189cee4,2024-01-10T00:00:00,Odienné,Denguélé,Dabou,Lagunes,9.492215,-7.716997,5.335402,-4.725226,138,work_migration,False,[np.str_('Odienné')],567.8
+ff585bfa9359,2024-01-24T00:00:00,Yamoussoukro,Yamoussoukro,Bocanda,Lacs,6.824408,-5.296812,6.861894,-4.41403,30,temporary_stay,False,[np.str_('Yamoussoukro')],97.6
+4f952a22e585,2024-01-02T00:00:00,Abidjan-Ville,Abidjan,Rubino,Lagunes,5.310111,-3.926371,6.008538,-4.214131,59,circular_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",83.9
+0b73ff8c170d,2024-01-27T00:00:00,Abidjan-Ville,Abidjan,Tiebissou,Lacs,5.460325,-4.085379,7.166025,-5.431496,27,temporary_stay,False,[np.str_('Abidjan-Ville')],241.0
+5b2d51a469e5,2024-01-22T00:00:00,Abengourou,Comoé,Grand-Zattry,Bas-Sassandra,6.347147,-3.44821,6.152847,-6.431062,85,seasonal_agriculture,True,"[np.str_('Abengourou'), np.str_('Bingerville')]",330.4
+de9d31f034cb,2024-01-26T00:00:00,Gueyo,Bas-Sassandra,Sinematiali,Savanes,5.649125,-6.09918,9.501288,-5.371119,13,temporary_stay,True,"[np.str_('Gueyo'), np.str_('Bingerville')]",435.8
+bf703166b98c,2024-01-10T00:00:00,Abidjan-Ville,Abidjan,Grand-Lahou,Lagunes,5.413871,-3.968438,5.401666,-4.765656,90,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",88.3
+fdca4cf40db9,2024-01-16T00:00:00,Abidjan-Ville,Abidjan,Divo,Gôh-Djiboua,5.353653,-4.056103,6.016175,-5.129638,57,temporary_stay,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",139.8
+a76da66c58c0,2024-01-28T00:00:00,Bouake,ValléeduBandama,Santama-Sokoro,ValléeduBandama,7.887382,-4.686905,7.962545,-4.518767,52,circular_migration,True,"[np.str_('Bouake'), np.str_('Anyama')]",20.3
+b8776cf75cea,2024-01-25T00:00:00,Gagnoa,Gôh-Djiboua,Bondoukou,Zanzan,5.880061,-5.945632,8.649596,-2.760913,98,seasonal_agriculture,True,"[np.str_('Gagnoa'), np.str_('Abidjan-Ville')]",467.1
+54a3148e7fac,2024-01-02T00:00:00,Bouake,ValléeduBandama,Abengourou,Comoé,7.899756,-4.85565,6.875011,-3.688276,280,work_migration,True,"[np.str_('Bouake'), np.str_('Anyama')]",171.9
+03f98bfff6f9,2024-01-21T00:00:00,Abidjan-Ville,Abidjan,Napieoledougou,Savanes,5.344897,-3.979565,8.973146,-5.585297,106,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",440.6
+ba3f15c2db2e,2024-01-10T00:00:00,Yamoussoukro,Yamoussoukro,Kongasso,Woroba,6.739824,-5.276904,7.869871,-6.051881,330,work_migration,False,[np.str_('Yamoussoukro')],152.0
+b0c41c93fe1a,2024-01-20T00:00:00,Bouake,ValléeduBandama,Sarhala,Woroba,7.927216,-5.103174,8.577749,-6.003759,102,seasonal_agriculture,False,[np.str_('Bouake')],122.7
+4a124846ffb6,2024-01-05T00:00:00,Bouake,ValléeduBandama,Bonoua,Comoé,7.901437,-5.047992,5.604341,-3.536039,115,seasonal_agriculture,False,[np.str_('Bouake')],305.1
+b8fd26a4813e,2024-01-09T00:00:00,Bouake,ValléeduBandama,Biankouma,Montagnes,7.661203,-5.043037,7.9322,-7.337391,238,work_migration,False,[np.str_('Bouake')],254.6
+0afa0fc99f19,2024-01-21T00:00:00,Kong,Savanes,Ettrokro,Lacs,8.909763,-4.27394,7.182462,-3.83493,31,seasonal_agriculture,False,[np.str_('Kong')],198.1
+e8d2be43a82a,2024-01-28T00:00:00,Daloa,Sassandra-Marahoué,Niakarmadougou,ValléeduBandama,7.061238,-6.653969,8.690545,-5.192762,58,seasonal_agriculture,False,[np.str_('Daloa')],242.3
+e2407a56362f,2024-01-24T00:00:00,Abidjan-Ville,Abidjan,Koro,Woroba,5.436322,-4.121201,8.4446,-7.361492,179,work_migration,False,[np.str_('Abidjan-Ville')],489.7
+6c291be3ee9e,2024-01-22T00:00:00,Azaguie,Lagunes,Adzope,Lagunes,5.719115,-4.067616,6.221405,-3.778785,270,education_migration,True,"[np.str_('Azaguie'), np.str_('Bingerville')]",64.3
+48a498775db3,2024-01-15T00:00:00,Abidjan-Ville,Abidjan,Gueyo,Bas-Sassandra,5.401332,-4.112014,5.536542,-5.997217,176,permanent_relocation,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",209.2
+7e0c7f35b421,2024-01-22T00:00:00,Abidjan-Ville,Abidjan,Bouafle,Sassandra-Marahoué,5.2761,-4.054907,7.24048,-5.744116,51,circular_migration,False,[np.str_('Abidjan-Ville')],287.3
+661a733f1f46,2024-01-06T00:00:00,Bouake,ValléeduBandama,Zuénoula,Sassandra-Marahoué,7.77979,-5.023455,7.742736,-5.981361,127,permanent_relocation,False,[np.str_('Bouake')],105.6
+2456bff4fd5c,2024-01-01T00:00:00,Boundiali,Savanes,Adzope,Lagunes,9.404437,-6.366918,6.341453,-3.735571,236,permanent_relocation,False,[np.str_('Boundiali')],447.2
+93a3408b772e,2024-01-06T00:00:00,Ayame,Comoé,Odienné,Denguélé,5.584624,-3.138991,9.488777,-7.616571,359,work_migration,False,[np.str_('Ayame')],657.3
+6ea463f61c38,2024-01-12T00:00:00,Abidjan-Ville,Abidjan,Bouna,Zanzan,5.244101,-3.904396,9.308027,-3.203526,155,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",458.4
+a78ba58d73ae,2024-01-11T00:00:00,Boundiali,Savanes,Gboguhe,Sassandra-Marahoué,9.367131,-6.411502,6.755895,-6.588088,82,seasonal_agriculture,False,[np.str_('Boundiali')],291.0
+73dfde63548a,2024-01-23T00:00:00,Abidjan-Ville,Abidjan,Tieningboue,Woroba,5.403263,-3.937324,8.528251,-5.646335,96,permanent_relocation,False,[np.str_('Abidjan-Ville')],395.4
+026e161b5b47,2024-01-21T00:00:00,Abidjan-Ville,Abidjan,Bonieredougou,ValléeduBandama,5.381036,-3.929519,8.312198,-4.707371,90,permanent_relocation,False,[np.str_('Abidjan-Ville')],337.1
+546614390fbc,2024-01-26T00:00:00,Soubre,Bas-Sassandra,M'batto,Lacs,5.614231,-6.230443,6.675616,-4.449751,141,education_migration,False,[np.str_('Soubre')],229.5
+c5a9bf69e51d,2024-01-19T00:00:00,Gbongaha,Denguélé,Sikensi,Lagunes,9.423158,-7.193348,5.640869,-4.592323,72,seasonal_agriculture,False,[np.str_('Gbongaha')],509.0
+c160a7774341,2024-01-30T00:00:00,Abidjan-Ville,Abidjan,Bondoukou,Zanzan,5.427605,-4.004735,8.339566,-2.614315,224,work_migration,False,[np.str_('Abidjan-Ville')],358.3
+122ffd028d62,2024-01-16T00:00:00,Abidjan-Ville,Abidjan,Tieningboue,Woroba,5.350881,-4.10007,8.144917,-5.74497,35,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],359.9
+8f87e43de351,2024-01-23T00:00:00,Sangouine,Montagnes,Bingerville,Abidjan,7.237486,-7.779025,5.301181,-3.757751,114,permanent_relocation,False,[np.str_('Sangouine')],493.9
+8f479ccc4874,2024-01-14T00:00:00,Abidjan-Ville,Abidjan,Bassawa,ValléeduBandama,5.247902,-4.077456,7.932096,-4.278664,327,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",299.3
+dc931e193ef7,2024-01-02T00:00:00,Abengourou,Comoé,Napieoledougou,Savanes,6.747872,-3.709573,9.033411,-5.648792,166,education_migration,False,[np.str_('Abengourou')],332.0
+62bf6156f978,2024-01-20T00:00:00,Bouake,ValléeduBandama,Kanakono,Savanes,7.934163,-4.742953,10.408631,-6.250598,57,temporary_stay,False,[np.str_('Bouake')],321.1
+d45eba82107a,2024-01-04T00:00:00,Abidjan-Ville,Abidjan,Goulia,Denguélé,5.34368,-4.090137,10.105041,-7.194618,357,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",630.3
+c4886a92811b,2024-01-11T00:00:00,Abidjan-Ville,Abidjan,Botro,ValléeduBandama,5.415653,-4.125288,7.871406,-5.254704,83,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],300.2
+53a0f95a784d,2024-01-21T00:00:00,Abidjan-Ville,Abidjan,Toulepleu,Montagnes,5.420512,-4.12508,6.354579,-8.296674,117,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",473.0
+ab38adb5f849,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Lakota,Gôh-Djiboua,5.275404,-4.070565,5.865856,-5.795935,109,permanent_relocation,False,[np.str_('Abidjan-Ville')],201.9
+e0fcbf4feda9,2024-01-22T00:00:00,Abidjan-Ville,Abidjan,Hire,Gôh-Djiboua,5.372214,-4.002634,6.098407,-5.174494,254,education_migration,False,[np.str_('Abidjan-Ville')],152.7
+f3b27c2edbd0,2024-01-13T00:00:00,Diawala,Savanes,Mankono,Woroba,10.053962,-5.372785,8.029411,-6.08273,54,seasonal_agriculture,True,"[np.str_('Diawala'), np.str_('Abidjan-Ville')]",238.2
+d90637f4660a,2024-01-05T00:00:00,Abidjan-Ville,Abidjan,Affery,Lagunes,5.269713,-4.008473,6.41486,-4.023452,216,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",127.3
+e23a9a4d46a3,2024-01-28T00:00:00,Bouake,ValléeduBandama,Gnamangui,Bas-Sassandra,7.925692,-5.03323,5.592117,-6.674156,141,permanent_relocation,True,"[np.str_('Bouake'), np.str_('Anyama')]",316.5
+ac7bea6453aa,2024-01-08T00:00:00,Yamoussoukro,Yamoussoukro,Nassian,Zanzan,6.755921,-5.313441,8.517646,-3.619267,43,circular_migration,False,[np.str_('Yamoussoukro')],270.6
+7a4bd4dbd169,2024-01-25T00:00:00,Abidjan-Ville,Abidjan,Bouafle,Sassandra-Marahoué,5.351749,-3.942952,6.995861,-5.532166,14,temporary_stay,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",253.5
+703221690d78,2024-01-21T00:00:00,Divo,Gôh-Djiboua,Sinematiali,Savanes,5.677248,-5.05788,9.657977,-5.444889,90,work_migration,True,"[np.str_('Divo'), np.str_('Anyama')]",444.7
+9694d1e4b11d,2024-01-29T00:00:00,Abidjan-Ville,Abidjan,M'Bahiakro,Lacs,5.436334,-3.969618,7.513667,-4.148494,43,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],231.8
+3c438361b195,2024-01-15T00:00:00,Abidjan-Ville,Abidjan,Lakota,Gôh-Djiboua,5.263184,-4.095022,5.920055,-5.78117,94,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],200.4
+12c19dc5c40c,2024-01-15T00:00:00,Abidjan-Ville,Abidjan,Bangolo,Montagnes,5.313403,-3.952734,7.092433,-7.115688,152,work_migration,False,[np.str_('Abidjan-Ville')],401.7
+b985e9b04d37,2024-01-15T00:00:00,Abidjan-Ville,Abidjan,Saioua,Sassandra-Marahoué,5.443605,-3.987993,6.459067,-6.101906,20,temporary_stay,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",259.6
+fd2c311bab79,2024-01-04T00:00:00,Bouake,ValléeduBandama,Bingerville,Abidjan,7.965532,-5.059347,5.308924,-3.907657,41,temporary_stay,False,[np.str_('Bouake')],321.6
+dce748e62f33,2024-01-26T00:00:00,Abidjan-Ville,Abidjan,Bondoukou,Zanzan,5.442812,-4.070372,8.415814,-2.544615,214,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",371.0
+604fdedfb52b,2024-01-13T00:00:00,Bako,Denguélé,Morondo,Woroba,9.15872,-7.590676,8.821003,-6.868402,336,work_migration,False,[np.str_('Bako')],87.8
+1c410d7bd11a,2024-01-19T00:00:00,Dabou,Lagunes,Gboguhe,Sassandra-Marahoué,5.387267,-4.279507,6.859212,-6.574312,52,circular_migration,False,[np.str_('Dabou')],301.9
+1760d65a972f,2024-01-02T00:00:00,Bouake,ValléeduBandama,Massala,Woroba,7.619184,-5.136827,7.802333,-6.36048,91,seasonal_agriculture,False,[np.str_('Bouake')],136.4
+a2bffbb841a7,2024-01-08T00:00:00,San-Pedro,Bas-Sassandra,Ouelle,Lacs,4.743135,-6.626389,7.328177,-4.029152,177,permanent_relocation,True,"[np.str_('San-Pedro'), np.str_('Bingerville')]",406.3
+e734bda3dfe1,2024-01-08T00:00:00,Abidjan-Ville,Abidjan,Booko,Woroba,5.437173,-3.965696,8.901196,-7.621397,34,circular_migration,False,[np.str_('Abidjan-Ville')],557.7
+9dad5accf660,2024-01-04T00:00:00,Bongouanou,Lacs,Beoumi,ValléeduBandama,6.669252,-4.340726,7.698107,-5.615318,154,permanent_relocation,True,"[np.str_('Bongouanou'), np.str_('Anyama')]",181.3
+028d46d4a0b2,2024-01-10T00:00:00,Kong,Savanes,Booko,Woroba,9.130891,-4.288044,8.940642,-7.708227,106,seasonal_agriculture,False,[np.str_('Kong')],376.2
+e2b252ff372e,2024-01-16T00:00:00,Abidjan-Ville,Abidjan,Borotou,Woroba,5.248566,-4.009915,8.795323,-7.584079,99,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],557.7
+393b418a56ee,2024-01-29T00:00:00,Taabo,Lagunes,Bonoua,Comoé,6.270986,-5.231763,5.657942,-3.477275,43,circular_migration,False,[np.str_('Taabo')],205.7
+c2bf8bc10d78,2024-01-13T00:00:00,Korhogo,Savanes,Guiembe,Savanes,9.462505,-5.827448,9.189157,-5.782691,56,temporary_stay,False,[np.str_('Korhogo')],30.8
+b0cb4c6ffebd,2024-01-28T00:00:00,Abidjan-Ville,Abidjan,Diegonefla,Gôh-Djiboua,5.377322,-4.021068,6.199674,-5.580642,102,permanent_relocation,False,[np.str_('Abidjan-Ville')],195.3
+45720e1b5faf,2024-01-06T00:00:00,Bouafle,Sassandra-Marahoué,Logouale,Montagnes,6.87485,-5.88572,7.04592,-7.591474,236,work_migration,True,"[np.str_('Bouafle'), np.str_('Bingerville')]",189.2
+a288034662c7,2024-01-15T00:00:00,Gagnoa,Gôh-Djiboua,Dualla,Woroba,5.925504,-5.864025,8.316646,-6.439308,284,work_migration,False,[np.str_('Gagnoa')],273.4
+22a84acef175,2024-01-24T00:00:00,Abidjan-Ville,Abidjan,Bako,Denguélé,5.256207,-3.874207,9.060726,-7.550663,41,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",586.0
+3f7c1154dda0,2024-01-20T00:00:00,Abidjan-Ville,Abidjan,Touba,Woroba,5.277473,-3.938234,8.389948,-7.508986,339,work_migration,False,[np.str_('Abidjan-Ville')],524.6
+b4e156a03010,2024-01-30T00:00:00,Bouake,ValléeduBandama,Gagnoa,Gôh-Djiboua,7.935162,-4.991255,5.713375,-6.021947,34,circular_migration,False,[np.str_('Bouake')],272.0
+47b8ab9cfa1a,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Fronan,ValléeduBandama,5.437518,-4.068882,8.408345,-5.536801,16,circular_migration,False,[np.str_('Abidjan-Ville')],367.9
+3915a9dfb3d7,2024-01-09T00:00:00,Tie-N'diekro,Lacs,Sinematiali,Savanes,7.497729,-4.826177,9.62758,-5.373141,241,work_migration,False,"[np.str_(""Tie-N'diekro"")]",244.3
+5481fce83811,2024-01-16T00:00:00,Abidjan-Ville,Abidjan,Guiberoua,Gôh-Djiboua,5.264488,-3.897819,6.257563,-6.286118,16,circular_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",286.4
+f43256a00bc9,2024-01-05T00:00:00,Divo,Gôh-Djiboua,Prikro,Lacs,5.727145,-5.092702,7.722574,-4.059047,318,work_migration,False,[np.str_('Divo')],249.5
+5f916637e1c3,2024-01-20T00:00:00,Abidjan-Ville,Abidjan,Gboguhe,Sassandra-Marahoué,5.309245,-4.063592,6.941935,-6.580547,326,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",332.3
+b5c287d3e9f3,2024-01-09T00:00:00,Abidjan-Ville,Abidjan,M'bengue,Savanes,5.301983,-4.065279,10.035808,-6.099098,179,permanent_relocation,False,[np.str_('Abidjan-Ville')],572.1
+dadd7e10ec1a,2024-01-26T00:00:00,Abidjan-Ville,Abidjan,Dioulatiedougou,Denguélé,5.432334,-4.064053,9.130274,-7.220978,308,work_migration,False,[np.str_('Abidjan-Ville')],538.8
+499e4b8ca4d5,2024-01-19T00:00:00,Adzope,Lagunes,Koonan,Woroba,6.207496,-3.70997,8.32458,-8.141215,55,temporary_stay,False,[np.str_('Adzope')],542.5
+9d790651c78d,2024-01-17T00:00:00,Massala,Woroba,Tortiya,ValléeduBandama,7.898521,-6.413304,8.611013,-5.553998,292,permanent_relocation,False,[np.str_('Massala')],123.4
+3d5a42d18a66,2024-01-29T00:00:00,Abidjan-Ville,Abidjan,Duékoué,Montagnes,5.282107,-4.117957,6.466366,-7.130319,191,permanent_relocation,False,[np.str_('Abidjan-Ville')],358.3
+788de3b8c63e,2024-01-29T00:00:00,Yamoussoukro,Yamoussoukro,Mafere,Comoé,6.732606,-5.227933,5.57591,-2.986552,45,temporary_stay,True,"[np.str_('Yamoussoukro'), np.str_('Bingerville')]",279.2
+a4d9ba3ecd97,2024-01-08T00:00:00,Koonan,Woroba,Kounahiri,Woroba,8.372102,-7.95415,7.90501,-5.690232,54,seasonal_agriculture,False,[np.str_('Koonan')],254.6
+eebe45ac1161,2024-01-30T00:00:00,Bongouanou,Lacs,Kouto,Savanes,6.655059,-4.209034,9.923215,-6.377044,56,temporary_stay,True,"[np.str_('Bongouanou'), np.str_('Anyama')]",434.7
+7967144ab40f,2024-01-21T00:00:00,Bouake,ValléeduBandama,Kolia,Savanes,7.644185,-4.932151,10.036464,-6.837108,164,work_migration,False,[np.str_('Bouake')],338.5
+b8ba1333507e,2024-01-12T00:00:00,Daloa,Sassandra-Marahoué,Grand-Zattry,Bas-Sassandra,6.898426,-6.386895,6.053041,-6.751221,39,seasonal_agriculture,True,"[np.str_('Daloa'), np.str_('Anyama')]",102.3
+093e26e36073,2024-01-09T00:00:00,Abidjan-Ville,Abidjan,Bonieredougou,ValléeduBandama,5.356361,-4.028629,8.442957,-4.850072,280,education_migration,False,[np.str_('Abidjan-Ville')],355.0
+96633e019262,2024-01-24T00:00:00,Yamoussoukro,Yamoussoukro,Gboguhe,Sassandra-Marahoué,6.826519,-5.419842,6.737436,-6.552535,112,seasonal_agriculture,True,"[np.str_('Yamoussoukro'), np.str_('Bingerville')]",125.5
+7f15a47f2333,2024-01-11T00:00:00,Abidjan-Ville,Abidjan,Kaniasso,Denguélé,5.309122,-4.05536,9.949872,-7.457291,171,permanent_relocation,False,[np.str_('Abidjan-Ville')],637.8
+209ffe69e084,2024-01-01T00:00:00,Divo,Gôh-Djiboua,Niable,Comoé,5.759736,-4.99085,6.798564,-3.305863,189,education_migration,False,[np.str_('Divo')],219.1
+70aa23784cc2,2024-01-16T00:00:00,Abidjan-Ville,Abidjan,Azaguie,Lagunes,5.373539,-4.011631,5.627041,-4.129901,361,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",31.1
+4baa7e79fcb2,2024-01-05T00:00:00,Abidjan-Ville,Abidjan,Tiebissou,Lacs,5.254672,-3.914866,7.136206,-5.45316,178,education_migration,False,[np.str_('Abidjan-Ville')],269.6
+f3f5bab5ebe5,2024-01-03T00:00:00,San-Pedro,Bas-Sassandra,Zuénoula,Sassandra-Marahoué,4.925767,-6.450355,7.31192,-6.11,326,permanent_relocation,True,"[np.str_('San-Pedro'), np.str_('Bingerville')]",268.0
+78f57834a21f,2024-01-24T00:00:00,Abidjan-Ville,Abidjan,Dabakala,ValléeduBandama,5.445756,-4.096984,8.173167,-4.53552,345,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",307.1
+ddeb6a1be230,2024-01-05T00:00:00,San-Pedro,Bas-Sassandra,Diabo,ValléeduBandama,4.866094,-6.665449,7.780246,-5.185695,27,temporary_stay,False,[np.str_('San-Pedro')],363.0
+0fb0440d3bc6,2024-01-11T00:00:00,Bouna,Zanzan,Bonon,Sassandra-Marahoué,8.888011,-3.403276,6.75941,-6.00412,60,seasonal_agriculture,False,[np.str_('Bouna')],371.6
+456e82610c08,2024-01-14T00:00:00,Abidjan-Ville,Abidjan,Blolequin,Montagnes,5.416148,-4.039664,6.509576,-8.154951,348,work_migration,False,[np.str_('Abidjan-Ville')],471.1
+bc761bc7fdfd,2024-01-15T00:00:00,Divo,Gôh-Djiboua,Grand-Lahou,Lagunes,6.022405,-5.420914,5.32881,-5.009902,55,seasonal_agriculture,False,[np.str_('Divo')],89.5
+28abc6d4c13a,2024-01-22T00:00:00,Yamoussoukro,Yamoussoukro,Bonon,Sassandra-Marahoué,6.844473,-5.412887,7.034997,-5.978547,204,permanent_relocation,False,[np.str_('Yamoussoukro')],65.9
+1d1f62e211c9,2024-01-13T00:00:00,Adiake,Comoé,Sipilou,Montagnes,5.213798,-3.347754,7.941505,-7.989874,87,seasonal_agriculture,False,[np.str_('Adiake')],595.7
+a7ece2c3d2b4,2024-01-25T00:00:00,Abidjan-Ville,Abidjan,Komborodougou,Savanes,5.306064,-4.042553,9.448053,-5.444884,54,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],485.8
+bc5105cea829,2024-01-09T00:00:00,Kouassikro,Lacs,Sinfra,Sassandra-Marahoué,7.119336,-4.705972,6.698546,-5.793251,42,circular_migration,False,[np.str_('Kouassikro')],128.8
+b256c1519718,2024-01-05T00:00:00,Abidjan-Ville,Abidjan,Dualla,Woroba,5.27616,-3.978862,8.201516,-6.536149,288,permanent_relocation,False,[np.str_('Abidjan-Ville')],430.7
+ac32ccd277fb,2024-01-17T00:00:00,Tienko,Denguélé,Bediala,Sassandra-Marahoué,10.199517,-7.520327,7.010915,-6.331399,278,work_migration,False,[np.str_('Tienko')],377.9
+0f10f54e3e16,2024-01-04T00:00:00,San-Pedro,Bas-Sassandra,Daoukro,Lacs,4.998367,-6.455161,6.979374,-3.922482,37,circular_migration,False,[np.str_('San-Pedro')],356.3
+745d7714df0d,2024-01-13T00:00:00,Abidjan-Ville,Abidjan,Sakassou,ValléeduBandama,5.282766,-3.945597,7.426419,-5.566924,56,temporary_stay,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",298.2
+f8f970544680,2024-01-30T00:00:00,Bouake,ValléeduBandama,Diabo,ValléeduBandama,7.848508,-4.988261,7.712394,-5.205167,16,temporary_stay,False,[np.str_('Bouake')],28.3
+3e24e3f73b38,2024-01-24T00:00:00,San-Pedro,Bas-Sassandra,Ferkessedougou,Savanes,5.33586,-6.878543,9.857586,-4.838433,59,seasonal_agriculture,False,[np.str_('San-Pedro')],550.8
+e732aa384ea6,2024-01-25T00:00:00,Bettie,Comoé,Daloa,Sassandra-Marahoué,6.232707,-3.354553,6.863804,-6.364024,27,temporary_stay,True,"[np.str_('Bettie'), np.str_('Anyama')]",339.8
+17cd046e9214,2024-01-11T00:00:00,Seguelon,Denguélé,Guiglo,Montagnes,9.171087,-6.844184,6.588702,-7.597732,101,seasonal_agriculture,False,[np.str_('Seguelon')],298.9
+ab73429a0d3e,2024-01-29T00:00:00,Abidjan-Ville,Abidjan,Sikensi,Lagunes,5.293967,-3.901938,5.566237,-4.393015,280,work_migration,False,[np.str_('Abidjan-Ville')],62.2
+15552bf72a1b,2024-01-23T00:00:00,Korhogo,Savanes,Kounahiri,Woroba,9.576907,-5.758081,7.996835,-5.755485,131,work_migration,False,[np.str_('Korhogo')],175.7
+f228154566b0,2024-01-13T00:00:00,Abidjan-Ville,Abidjan,Alépé,Lagunes,5.249123,-4.05475,5.630946,-3.7039,7,temporary_stay,False,[np.str_('Abidjan-Ville')],57.5
+2971c3d0ddfe,2024-01-26T00:00:00,Abidjan-Ville,Abidjan,Djebonoua,ValléeduBandama,5.407441,-4.129818,7.560475,-4.919215,169,permanent_relocation,False,[np.str_('Abidjan-Ville')],254.8
+0be3e7b5400f,2024-01-15T00:00:00,Yamoussoukro,Yamoussoukro,Divo,Gôh-Djiboua,6.841404,-5.314664,5.703039,-5.058586,363,work_migration,True,"[np.str_('Yamoussoukro'), np.str_('Bingerville')]",129.7
+1539861fa63e,2024-01-15T00:00:00,Bouake,ValléeduBandama,Mafere,Comoé,7.630832,-4.951033,5.520587,-2.962849,167,education_migration,True,"[np.str_('Bouake'), np.str_('Abidjan-Ville')]",321.4
+038982a60b82,2024-01-19T00:00:00,M'bengue,Savanes,Sipilou,Montagnes,9.905118,-6.11424,7.739153,-8.081211,162,permanent_relocation,True,"[np.str_(""M'bengue""), np.str_('Bingerville')]",323.6
+0d85df1cb604,2024-01-12T00:00:00,Abidjan-Ville,Abidjan,Doropo,Zanzan,5.412235,-4.012289,9.798929,-3.312812,124,permanent_relocation,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",493.8
+fb4c8622bed7,2024-01-10T00:00:00,Bouake,ValléeduBandama,Niofoin,Savanes,7.945938,-5.088176,9.682504,-6.108646,32,temporary_stay,False,[np.str_('Bouake')],223.3
+44b4e967e383,2024-01-08T00:00:00,Abidjan-Ville,Abidjan,Dabou,Lagunes,5.250297,-4.093052,5.380313,-4.611842,110,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],59.2
+f455d7cdfe3a,2024-01-27T00:00:00,Bouake,ValléeduBandama,Napieoledougou,Savanes,7.807612,-4.93051,8.883096,-5.596279,104,permanent_relocation,True,"[np.str_('Bouake'), np.str_('Anyama')]",140.2
+b9e05cdd79c9,2024-01-24T00:00:00,Bouake,ValléeduBandama,Man,Montagnes,7.667071,-5.061895,7.550964,-7.464788,195,education_migration,True,"[np.str_('Bouake'), np.str_('Abidjan-Ville')]",265.2
+ad6d033616ad,2024-01-14T00:00:00,Gbon,Savanes,Grand-Lahou,Lagunes,9.822712,-6.454726,5.313961,-4.932947,40,seasonal_agriculture,False,[np.str_('Gbon')],528.7
+93842246193c,2024-01-13T00:00:00,Abidjan-Ville,Abidjan,Seguelon,Denguélé,5.241187,-3.884141,9.178939,-6.928045,39,circular_migration,False,[np.str_('Abidjan-Ville')],551.7
+fa88dccf3444,2024-01-03T00:00:00,Vavoua,Sassandra-Marahoué,Kani,Woroba,7.788834,-6.680814,8.532639,-6.475164,91,permanent_relocation,True,"[np.str_('Vavoua'), np.str_('Abidjan-Ville')]",85.7
+ace96239cd25,2024-01-08T00:00:00,Abidjan-Ville,Abidjan,Facobly,Montagnes,5.317626,-3.936101,7.668307,-7.088257,127,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",435.4
+bec42b9c852a,2024-01-14T00:00:00,Assuefry,Zanzan,Guinteguela,Woroba,7.666709,-2.986294,8.170453,-7.326567,15,temporary_stay,True,"[np.str_('Assuefry'), np.str_('Anyama')]",481.3
+8994dea5f8e9,2024-01-13T00:00:00,Abidjan-Ville,Abidjan,Agnibilekro,Comoé,5.336947,-4.047077,7.291511,-3.506811,51,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",225.4
+b092c0917329,2024-01-04T00:00:00,Worofla,Woroba,Gohitafla,Sassandra-Marahoué,8.359445,-6.973338,7.430662,-5.946575,101,seasonal_agriculture,False,[np.str_('Worofla')],153.1
+306d6773af00,2024-01-18T00:00:00,Koro,Woroba,Touba,Woroba,8.514865,-7.557609,8.388138,-7.483226,48,seasonal_agriculture,True,"[np.str_('Koro'), np.str_('Abidjan-Ville')]",16.3
+b173470bd899,2024-01-01T00:00:00,Abidjan-Ville,Abidjan,Adiake,Comoé,5.240254,-4.103152,5.252245,-3.247566,242,education_migration,False,[np.str_('Abidjan-Ville')],94.7
+eb75203df44f,2024-01-22T00:00:00,Kolia,Savanes,Bondoukou,Zanzan,10.082894,-6.776074,8.218559,-3.359118,182,permanent_relocation,False,[np.str_('Kolia')],428.6
+f27eb4183cdc,2024-01-14T00:00:00,Kouassikro,Lacs,Sikensi,Lagunes,7.422179,-4.660092,5.593297,-4.536949,220,work_migration,False,[np.str_('Kouassikro')],203.8
+dbbab8cbf754,2024-01-21T00:00:00,Abidjan-Ville,Abidjan,Grabo,Bas-Sassandra,5.426323,-3.951231,5.221204,-7.313645,252,education_migration,False,[np.str_('Abidjan-Ville')],373.0
+6e2df9519ba0,2024-01-15T00:00:00,Saioua,Sassandra-Marahoué,Diabo,ValléeduBandama,6.529983,-6.10927,7.712578,-5.192959,36,temporary_stay,True,"[np.str_('Saioua'), np.str_('Abidjan-Ville')]",165.9
+0a314242eecf,2024-01-07T00:00:00,Korhogo,Savanes,Grabo,Bas-Sassandra,9.485265,-5.694344,5.246427,-7.17966,42,circular_migration,True,"[np.str_('Korhogo'), np.str_('Abidjan-Ville')]",499.0
+6d7bb714628e,2024-01-24T00:00:00,Bouake,ValléeduBandama,Arrah,Lacs,7.944057,-4.846193,6.72705,-3.813141,303,permanent_relocation,True,"[np.str_('Bouake'), np.str_('Bingerville')]",176.9
+95de5fbf746f,2024-01-04T00:00:00,Doropo,Zanzan,M'batto,Lacs,9.778866,-3.450378,6.27435,-4.465431,184,permanent_relocation,True,"[np.str_('Doropo'), np.str_('Anyama')]",405.4
+584e4633db57,2024-01-17T00:00:00,M'Bahiakro,Lacs,Doropo,Zanzan,7.703463,-4.235663,9.804139,-3.374328,58,seasonal_agriculture,False,"[np.str_(""M'Bahiakro"")]",252.0
+d33f6c318d7f,2024-01-06T00:00:00,San-Pedro,Bas-Sassandra,Bondoukou,Zanzan,5.334247,-6.851066,8.592567,-3.005684,61,seasonal_agriculture,True,"[np.str_('San-Pedro'), np.str_('Anyama')]",558.0
+81f3529b606b,2024-01-08T00:00:00,Songon,Abidjan,Tieme,Denguélé,5.368074,-4.230904,9.607414,-7.35817,211,work_migration,False,[np.str_('Songon')],584.0
+715d63c29dfa,2024-01-16T00:00:00,Bouake,ValléeduBandama,Sipilou,Montagnes,7.727019,-5.055624,7.788689,-7.923427,12,temporary_stay,False,[np.str_('Bouake')],316.0
+73d2da468036,2024-01-24T00:00:00,Facobly,Montagnes,Alépé,Lagunes,7.341814,-7.377197,5.638291,-3.86748,289,work_migration,False,[np.str_('Facobly')],431.5
+9cf552b589e2,2024-01-12T00:00:00,Bouake,ValléeduBandama,M'Bahiakro,Lacs,7.571407,-4.896719,7.436266,-4.601145,97,seasonal_agriculture,False,[np.str_('Bouake')],35.9
+7f2f8ae33a44,2024-01-04T00:00:00,Dabakala,ValléeduBandama,Odienné,Denguélé,8.168876,-4.353915,9.57611,-7.474212,172,education_migration,False,[np.str_('Dabakala')],376.8
+8a60b7a5de93,2024-01-08T00:00:00,Abengourou,Comoé,Minignan,Denguélé,6.302015,-3.351483,10.014566,-7.824361,163,permanent_relocation,True,"[np.str_('Abengourou'), np.str_('Anyama')]",642.4
+fd66ad5661ca,2024-01-08T00:00:00,Abidjan-Ville,Abidjan,Touba,Woroba,5.418352,-3.981328,8.37522,-7.498298,124,work_migration,False,[np.str_('Abidjan-Ville')],508.7
+607762e866b8,2024-01-15T00:00:00,Bouake,ValléeduBandama,Bouna,Zanzan,7.839011,-5.063833,9.352588,-3.398699,330,permanent_relocation,True,"[np.str_('Bouake'), np.str_('Anyama')]",248.7
+d738c78ad08f,2024-01-27T00:00:00,Abengourou,Comoé,Rubino,Lagunes,6.864381,-3.657972,6.091134,-4.438124,154,education_migration,False,[np.str_('Abengourou')],121.7
+53b523366341,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Man,Montagnes,5.290991,-4.067269,7.440156,-7.449093,252,work_migration,False,[np.str_('Abidjan-Ville')],443.6
+3a681ddc13f2,2024-01-26T00:00:00,Ferkessedougou,Savanes,Tieningboue,Woroba,9.722752,-5.035491,8.243399,-5.976476,92,work_migration,False,[np.str_('Ferkessedougou')],194.3
+a1c5d29f380c,2024-01-26T00:00:00,Abidjan-Ville,Abidjan,M'bengue,Savanes,5.264981,-4.086632,9.973913,-6.003071,30,temporary_stay,False,[np.str_('Abidjan-Ville')],564.6
+9a48f5ad41a2,2024-01-16T00:00:00,Bouake,ValléeduBandama,Hire,Gôh-Djiboua,7.658054,-5.095398,6.085739,-5.245042,346,work_migration,True,"[np.str_('Bouake'), np.str_('Bingerville')]",175.6
+662c70833503,2024-01-10T00:00:00,Rubino,Lagunes,Tieme,Denguélé,6.056002,-4.287687,9.408289,-7.329578,233,work_migration,False,[np.str_('Rubino')],501.2
+e7542603a431,2024-01-18T00:00:00,Bouake,ValléeduBandama,Aboisso,Comoé,7.666187,-5.088888,5.434806,-3.399936,89,seasonal_agriculture,False,[np.str_('Bouake')],310.4
+ef74ac0a41d0,2024-01-14T00:00:00,Fresco,Bas-Sassandra,Zuénoula,Sassandra-Marahoué,5.179728,-5.527148,7.31571,-6.067506,56,seasonal_agriculture,True,"[np.str_('Fresco'), np.str_('Anyama')]",244.9
+bd7b41bd77a1,2024-01-19T00:00:00,Bouake,ValléeduBandama,Ayame,Comoé,7.859228,-4.947922,6.004007,-3.191819,157,work_migration,False,[np.str_('Bouake')],283.1
+20dcea37562b,2024-01-13T00:00:00,Abengourou,Comoé,Ferkessedougou,Savanes,6.513139,-3.451092,9.628294,-5.306355,329,permanent_relocation,False,[np.str_('Abengourou')],402.1
+2a2a555fadd4,2024-01-23T00:00:00,Bouake,ValléeduBandama,Sandégué,Zanzan,7.941469,-4.88376,7.805519,-3.847966,27,temporary_stay,False,[np.str_('Bouake')],115.1
+e86d3a9deb73,2024-01-26T00:00:00,Bonon,Sassandra-Marahoué,Kouto,Savanes,7.117489,-5.883377,10.134793,-6.460366,70,seasonal_agriculture,True,"[np.str_('Bonon'), np.str_('Anyama')]",341.5
+3096b2f098e5,2024-01-27T00:00:00,Abidjan-Ville,Abidjan,Anyama,Abidjan,5.422471,-3.989981,5.524609,-3.900331,117,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],15.1
+4e915b7816d3,2024-01-26T00:00:00,Abidjan-Ville,Abidjan,Massala,Woroba,5.248056,-3.912773,7.881176,-6.285526,181,work_migration,False,[np.str_('Abidjan-Ville')],393.0
+4d761d50aaa0,2024-01-21T00:00:00,Gnamangui,Bas-Sassandra,Transua,Zanzan,5.517196,-6.700402,7.333249,-3.040785,109,seasonal_agriculture,False,[np.str_('Gnamangui')],452.0
+d22fd4a72f2a,2024-01-19T00:00:00,Abidjan-Ville,Abidjan,Botro,ValléeduBandama,5.326534,-4.105179,8.021836,-5.348044,306,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",329.6
+3c023bd0a7d4,2024-01-26T00:00:00,Yamoussoukro,Yamoussoukro,Kassere,Savanes,6.946216,-5.470245,9.749864,-6.366005,88,seasonal_agriculture,True,"[np.str_('Yamoussoukro'), np.str_('Anyama')]",327.0
+a7c515102c36,2024-01-27T00:00:00,Bouake,ValléeduBandama,Kongasso,Woroba,7.607749,-4.961035,7.72282,-6.078871,79,seasonal_agriculture,False,[np.str_('Bouake')],123.8
+72788d35a9ae,2024-01-21T00:00:00,Zikisso,Gôh-Djiboua,Bingerville,Abidjan,6.059358,-5.51563,5.381395,-3.891808,350,work_migration,False,[np.str_('Zikisso')],194.8
+629062a5f5d7,2024-01-14T00:00:00,Abidjan-Ville,Abidjan,M'Bahiakro,Lacs,5.291469,-4.071117,7.816313,-4.281559,83,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],281.7
+3affafd57883,2024-01-23T00:00:00,San-Pedro,Bas-Sassandra,Minignan,Denguélé,5.246798,-6.902284,10.192911,-7.78093,225,education_migration,False,[np.str_('San-Pedro')],558.4
+736aec6d9fc9,2024-01-11T00:00:00,Abidjan-Ville,Abidjan,Diegonefla,Gôh-Djiboua,5.33778,-4.043847,6.382559,-5.71483,109,work_migration,False,[np.str_('Abidjan-Ville')],218.3
+fd22f1bfccbe,2024-01-05T00:00:00,Korhogo,Savanes,Mafere,Comoé,9.702105,-5.555879,5.610342,-3.026215,139,work_migration,True,"[np.str_('Korhogo'), np.str_('Anyama')]",533.6
+72ba1e072579,2024-01-19T00:00:00,Sifie,Woroba,Minignan,Denguélé,8.010021,-6.878776,10.044419,-7.695119,287,permanent_relocation,False,[np.str_('Sifie')],243.3
+d6e3e6a9f5e4,2024-01-07T00:00:00,Abidjan-Ville,Abidjan,Worofla,Woroba,5.250396,-4.068968,8.448809,-6.931455,95,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],475.7
+ccf1c931f1a9,2024-01-03T00:00:00,Korhogo,Savanes,Toumodi,Lacs,9.61848,-5.736139,6.663441,-5.172908,168,work_migration,False,[np.str_('Korhogo')],334.4
+ca6ef2de3438,2024-01-03T00:00:00,Yamoussoukro,Yamoussoukro,Grabo,Bas-Sassandra,6.762665,-5.239328,5.277225,-7.203282,58,temporary_stay,True,"[np.str_('Yamoussoukro'), np.str_('Anyama')]",272.8
+54626f64c11c,2024-01-04T00:00:00,Abidjan-Ville,Abidjan,Foumbolo,ValléeduBandama,5.444606,-4.012175,8.88356,-4.914391,46,circular_migration,False,[np.str_('Abidjan-Ville')],395.1
+4a6b4885179f,2024-01-03T00:00:00,Abidjan-Ville,Abidjan,Niakarmadougou,ValléeduBandama,5.295666,-4.025879,8.86571,-5.069771,60,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],413.3
+3c1b3b8aa180,2024-01-24T00:00:00,Abidjan-Ville,Abidjan,Facobly,Montagnes,5.421039,-4.109595,7.583475,-7.024621,230,work_migration,False,[np.str_('Abidjan-Ville')],401.9
+9986e8ec9724,2024-01-20T00:00:00,Korhogo,Savanes,Biankouma,Montagnes,9.477687,-5.586577,7.636804,-7.673439,191,education_migration,True,"[np.str_('Korhogo'), np.str_('Bingerville')]",307.5
+730d42e6f3f9,2024-01-18T00:00:00,Abidjan-Ville,Abidjan,Gnamangui,Bas-Sassandra,5.278186,-4.022697,5.574394,-6.466193,140,education_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",272.5
+ef7a1f1fea81,2024-01-29T00:00:00,Sinematiali,Savanes,Sakassou,ValléeduBandama,9.572764,-5.487398,7.455982,-5.212425,50,seasonal_agriculture,False,[np.str_('Sinematiali')],237.3
+df7db4766405,2024-01-18T00:00:00,Abidjan-Ville,Abidjan,Nassian,Zanzan,5.312549,-3.995901,8.382299,-3.699042,150,permanent_relocation,False,[np.str_('Abidjan-Ville')],342.9
+058ddc3a584a,2024-01-04T00:00:00,Abidjan-Ville,Abidjan,Sipilou,Montagnes,5.431133,-4.08452,7.939419,-8.059296,14,circular_migration,False,[np.str_('Abidjan-Ville')],520.0
+ff878855a33a,2024-01-23T00:00:00,Gagnoa,Gôh-Djiboua,Facobly,Montagnes,5.836083,-6.164824,7.446675,-7.287242,288,work_migration,False,[np.str_('Gagnoa')],217.8
+46bd37953a4d,2024-01-17T00:00:00,Bouake,ValléeduBandama,Bonon,Sassandra-Marahoué,7.886039,-5.05653,6.856941,-6.030807,23,circular_migration,False,[np.str_('Bouake')],157.0
+62b96141ea86,2024-01-22T00:00:00,Man,Montagnes,Agou,Lagunes,7.534034,-7.529213,5.828432,-3.888579,83,seasonal_agriculture,True,"[np.str_('Man'), np.str_('Bingerville')]",444.5
+8cfee585c9ad,2024-01-07T00:00:00,Korhogo,Savanes,Gboguhe,Sassandra-Marahoué,9.499832,-5.680834,6.777679,-6.590441,51,seasonal_agriculture,True,"[np.str_('Korhogo'), np.str_('Anyama')]",318.8
+62344735aeee,2024-01-15T00:00:00,Abidjan-Ville,Abidjan,Gueyo,Bas-Sassandra,5.39366,-4.077968,5.519997,-6.112036,326,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",225.6
+db499764a3b4,2024-01-28T00:00:00,Bonon,Sassandra-Marahoué,Tiapoum,Comoé,6.712408,-6.132416,5.1727,-2.76024,226,permanent_relocation,False,[np.str_('Bonon')],410.4
+26cf9aa019cb,2024-01-27T00:00:00,Bouake,ValléeduBandama,Tioroniaradougou,Savanes,7.613558,-5.043451,9.35559,-5.777166,212,work_migration,True,"[np.str_('Bouake'), np.str_('Bingerville')]",209.8
+61d463446bd7,2024-01-02T00:00:00,Bocanda,Lacs,Man,Montagnes,6.8957,-4.280721,7.496648,-7.605518,33,circular_migration,False,[np.str_('Bocanda')],372.8
+be49a6aa42b8,2024-01-16T00:00:00,San-Pedro,Bas-Sassandra,Diawala,Savanes,5.191867,-6.581593,10.218395,-5.33818,33,circular_migration,False,[np.str_('San-Pedro')],575.5
+8e7d883a2c0d,2024-01-18T00:00:00,Sinfra,Sassandra-Marahoué,Soubre,Bas-Sassandra,6.652751,-5.532676,5.992408,-6.418949,262,work_migration,False,[np.str_('Sinfra')],122.4
+999c71faf99c,2024-01-21T00:00:00,Abidjan-Ville,Abidjan,Tiemelekro,Lacs,5.252066,-3.858589,6.481836,-4.499667,292,permanent_relocation,False,[np.str_('Abidjan-Ville')],154.0
+7fb0716a8064,2024-01-09T00:00:00,Tioroniaradougou,Savanes,Tieningboue,Woroba,9.298763,-5.665887,8.399945,-5.630621,8,temporary_stay,True,"[np.str_('Tioroniaradougou'), np.str_('Anyama')]",100.0
+8b255e7177f7,2024-01-23T00:00:00,Abidjan-Ville,Abidjan,Mafere,Comoé,5.278996,-4.081512,5.418227,-2.947457,80,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],126.5
+07e32a235da4,2024-01-20T00:00:00,Man,Montagnes,Toulepleu,Montagnes,7.416241,-7.616848,6.608966,-8.493363,131,permanent_relocation,False,[np.str_('Man')],132.0
+8e54c9c89be8,2024-01-09T00:00:00,Lakota,Gôh-Djiboua,Bongouanou,Lacs,5.934704,-5.660955,6.767743,-4.08744,118,seasonal_agriculture,False,[np.str_('Lakota')],197.0
+1be27774b7e0,2024-01-12T00:00:00,Tieme,Denguélé,Akoupe,Lagunes,9.577885,-7.303057,6.602071,-3.698373,56,circular_migration,False,[np.str_('Tieme')],516.7
+66deeb43bc65,2024-01-11T00:00:00,Saioua,Sassandra-Marahoué,Tieningboue,Woroba,6.516581,-6.22981,8.360236,-5.722412,118,seasonal_agriculture,True,"[np.str_('Saioua'), np.str_('Bingerville')]",212.5
+7deb3403f0b5,2024-01-16T00:00:00,Abidjan-Ville,Abidjan,Beoumi,ValléeduBandama,5.442427,-4.163202,7.705159,-5.654669,234,work_migration,False,[np.str_('Abidjan-Ville')],300.7
+d45e780419cd,2024-01-22T00:00:00,M'bengue,Savanes,Gbeleban,Denguélé,10.09482,-6.204249,9.499236,-8.119864,176,work_migration,True,"[np.str_(""M'bengue""), np.str_('Bingerville')]",220.1
+f0ee3712018a,2024-01-22T00:00:00,Abidjan-Ville,Abidjan,Agou,Lagunes,5.298949,-3.908178,5.973832,-4.029418,136,permanent_relocation,False,[np.str_('Abidjan-Ville')],76.2
+7f56ef24d501,2024-01-10T00:00:00,Abidjan-Ville,Abidjan,Grabo,Bas-Sassandra,5.39444,-4.096558,5.415376,-7.059646,46,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],328.0
+6a5d9c756bfb,2024-01-07T00:00:00,Abidjan-Ville,Abidjan,Sinfra,Sassandra-Marahoué,5.422234,-3.989708,6.621879,-5.974221,171,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",256.8
+f015ed938d31,2024-01-04T00:00:00,Abidjan-Ville,Abidjan,Guiglo,Montagnes,5.25419,-3.861548,6.247453,-7.783824,137,work_migration,False,[np.str_('Abidjan-Ville')],447.8
+e8ecf11e96e4,2024-01-30T00:00:00,Abidjan-Ville,Abidjan,M'bengue,Savanes,5.266492,-4.069662,10.133845,-5.848946,42,temporary_stay,False,[np.str_('Abidjan-Ville')],575.6
+b64c896dc8b3,2024-01-23T00:00:00,Abidjan-Ville,Abidjan,Grand-Bassam,Comoé,5.249102,-3.904064,5.26784,-3.787003,102,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",13.1
+3bc9673bba3f,2024-01-03T00:00:00,Korhogo,Savanes,Nassian,Zanzan,9.665254,-5.812589,8.44954,-3.887289,115,seasonal_agriculture,False,[np.str_('Korhogo')],250.9
+da7ee99152ae,2024-01-27T00:00:00,Abidjan-Ville,Abidjan,Alépé,Lagunes,5.445558,-4.055597,5.757452,-3.674008,13,circular_migration,False,[np.str_('Abidjan-Ville')],54.6
+22d11323aa8b,2024-01-04T00:00:00,Bouake,ValléeduBandama,Hire,Gôh-Djiboua,7.694627,-5.167504,6.168692,-5.265061,60,seasonal_agriculture,False,[np.str_('Bouake')],170.0
+59b6ac050229,2024-01-27T00:00:00,Agboville,Lagunes,Abidjan-Ville,Abidjan,5.841084,-4.436987,5.432397,-4.062707,124,work_migration,True,"[np.str_('Agboville'), np.str_('Songon')]",61.5
+36eb64446b9a,2024-01-16T00:00:00,Abidjan-Ville,Abidjan,Sassandra,Bas-Sassandra,5.418809,-4.100883,5.336432,-5.805919,157,permanent_relocation,False,[np.str_('Abidjan-Ville')],189.0
+a2db4f030da0,2024-01-20T00:00:00,Abidjan-Ville,Abidjan,Goulia,Denguélé,5.232227,-3.863729,10.256749,-6.6375,54,temporary_stay,False,[np.str_('Abidjan-Ville')],636.8
+3ad8fda793d1,2024-01-03T00:00:00,Bongouanou,Lacs,Yakasse-Attobrou,Lagunes,6.602593,-4.315147,6.134986,-3.626127,221,work_migration,True,"[np.str_('Bongouanou'), np.str_('Bingerville')]",92.2
+1fb775605b1b,2024-01-23T00:00:00,Abidjan-Ville,Abidjan,Méagui,Bas-Sassandra,5.367907,-4.054529,5.396907,-6.726446,79,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],295.8
+9aa861513fc0,2024-01-24T00:00:00,Abidjan-Ville,Abidjan,Komborodougou,Savanes,5.280939,-4.089757,9.290585,-5.379879,276,work_migration,False,[np.str_('Abidjan-Ville')],468.0
+74cfd0e7a461,2024-01-02T00:00:00,Abidjan-Ville,Abidjan,Djibrosso,Woroba,5.407437,-4.123788,8.575987,-6.858802,339,permanent_relocation,False,[np.str_('Abidjan-Ville')],463.9
+a39ccfd1f038,2024-01-06T00:00:00,Bouake,ValléeduBandama,Taï,Montagnes,7.835361,-4.92859,5.974799,-7.61288,46,circular_migration,False,[np.str_('Bouake')],361.4
+fd6adebc0b1b,2024-01-17T00:00:00,Sikensi,Lagunes,Diegonefla,Gôh-Djiboua,5.576327,-4.491934,6.2646,-5.70967,311,work_migration,True,"[np.str_('Sikensi'), np.str_('Bingerville')]",154.9
+41581e30b335,2024-01-05T00:00:00,San-Pedro,Bas-Sassandra,Grand-Zattry,Bas-Sassandra,5.330391,-6.557022,6.222858,-6.430317,211,work_migration,False,[np.str_('San-Pedro')],100.2
+dd50ffe6050d,2024-01-15T00:00:00,Abidjan-Ville,Abidjan,Taï,Montagnes,5.433685,-3.955382,5.829117,-7.191475,300,work_migration,False,[np.str_('Abidjan-Ville')],360.8
+f89aa6f66c60,2024-01-01T00:00:00,Abidjan-Ville,Abidjan,Prikro,Lacs,5.370657,-4.017894,7.648076,-3.754397,42,circular_migration,False,[np.str_('Abidjan-Ville')],254.9
+cdd8597ef9a4,2024-01-19T00:00:00,Abidjan-Ville,Abidjan,Zuénoula,Sassandra-Marahoué,5.415809,-4.132808,7.541225,-6.006568,7,temporary_stay,False,[np.str_('Abidjan-Ville')],314.2
+ee7519e5a6bc,2024-01-26T00:00:00,Niofoin,Savanes,Taabo,Lagunes,9.716028,-5.939377,6.255207,-4.963452,56,temporary_stay,False,[np.str_('Niofoin')],399.5
+35e17bf59614,2024-01-16T00:00:00,Tiemelekro,Lacs,Beoumi,ValléeduBandama,6.366084,-4.554599,7.822806,-5.591454,77,seasonal_agriculture,False,[np.str_('Tiemelekro')],198.3
+12479ac53afc,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Jacqueville,Lagunes,5.279917,-4.087719,5.263994,-4.751839,204,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",73.6
+662988298807,2024-01-18T00:00:00,Abidjan-Ville,Abidjan,Ayame,Comoé,5.373662,-3.940499,5.885158,-3.268252,262,education_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",93.6
+d0d6353198b7,2024-01-23T00:00:00,Abidjan-Ville,Abidjan,Bettie,Comoé,5.258286,-4.080325,5.993629,-3.25318,184,work_migration,False,[np.str_('Abidjan-Ville')],122.7
+eaad40b21038,2024-01-06T00:00:00,Abidjan-Ville,Abidjan,M'bengue,Savanes,5.47489,-4.007211,9.928913,-6.17034,106,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",549.6
+94a9804c5d46,2024-01-14T00:00:00,Abidjan-Ville,Abidjan,Karakoro,Savanes,5.431419,-4.03161,9.372954,-5.456798,30,temporary_stay,False,[np.str_('Abidjan-Ville')],465.6
+1029e91f19bb,2024-01-29T00:00:00,Abidjan-Ville,Abidjan,Goulia,Denguélé,5.430388,-4.004367,10.333427,-6.923758,41,seasonal_agriculture,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",632.9
+db4a35061762,2024-01-21T00:00:00,Bouake,ValléeduBandama,Tanda,Zanzan,7.660227,-5.008339,7.688693,-3.36258,104,work_migration,False,[np.str_('Bouake')],181.4
+c02bd9eede3f,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Rubino,Lagunes,5.294583,-4.045878,6.085381,-4.476078,250,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Songon')]",100.0
+951a8a9a5a8e,2024-01-07T00:00:00,Assuefry,Zanzan,Koumbala,Savanes,7.628823,-2.975214,9.525856,-5.176514,31,seasonal_agriculture,False,[np.str_('Assuefry')],321.0
+a2df251987bb,2024-01-10T00:00:00,Tehini,Zanzan,Tanda,Zanzan,9.742042,-4.105362,7.869127,-3.241015,277,education_migration,False,[np.str_('Tehini')],228.9
+64bf405ea41c,2024-01-26T00:00:00,San-Pedro,Bas-Sassandra,Diawala,Savanes,4.868584,-6.750207,9.910784,-5.686849,104,work_migration,True,"[np.str_('San-Pedro'), np.str_('Abidjan-Ville')]",572.8
+cdc423c94e61,2024-01-27T00:00:00,Oumé,Gôh-Djiboua,Gbon,Savanes,6.441611,-5.708553,10.083553,-6.720639,241,permanent_relocation,False,[np.str_('Oumé')],420.0
+6e81e00e26cf,2024-01-08T00:00:00,Grand-Lahou,Lagunes,Morondo,Woroba,5.711509,-4.967155,8.917154,-6.576026,281,work_migration,False,[np.str_('Grand-Lahou')],398.2
+50032d3ecf22,2024-01-30T00:00:00,Prikro,Lacs,Minignan,Denguélé,7.493198,-3.819986,10.082495,-8.031033,178,permanent_relocation,False,[np.str_('Prikro')],545.0
+6b8b7efc06bb,2024-01-21T00:00:00,Yamoussoukro,Yamoussoukro,Sirasso,Savanes,6.731004,-5.175098,9.029318,-6.091903,181,work_migration,False,[np.str_('Yamoussoukro')],274.8
+2a23fed59577,2024-01-02T00:00:00,Dioulatiedougou,Denguélé,Tiapoum,Comoé,9.049486,-7.224538,5.202571,-3.025709,252,work_migration,False,[np.str_('Dioulatiedougou')],630.5
+c9107c4d0644,2024-01-01T00:00:00,Bouake,ValléeduBandama,Kong,Savanes,7.919697,-4.637273,9.141022,-4.113412,119,seasonal_agriculture,True,"[np.str_('Bouake'), np.str_('Abidjan-Ville')]",147.5
+545b6d9a1f31,2024-01-27T00:00:00,Bouake,ValléeduBandama,Adiake,Comoé,7.609669,-4.978715,5.261604,-3.380445,329,work_migration,False,[np.str_('Bouake')],315.2
+f6844e57d458,2024-01-30T00:00:00,Samatiguila,Denguélé,Grand-Lahou,Lagunes,9.903559,-7.57189,5.709672,-4.831879,296,education_migration,True,"[np.str_('Samatiguila'), np.str_('Anyama')]",555.5
+c6c513283a1b,2024-01-06T00:00:00,Bouake,ValléeduBandama,Koumbala,Savanes,7.734482,-5.140148,9.613705,-5.027894,159,education_migration,False,[np.str_('Bouake')],209.3
+fab2483f9065,2024-01-11T00:00:00,Arrah,Lacs,Zouan-Hounien,Montagnes,6.707833,-3.970316,6.974163,-8.169601,346,work_migration,False,[np.str_('Arrah')],464.6
+c390e142c7b7,2024-01-09T00:00:00,San-Pedro,Bas-Sassandra,Agou,Lagunes,5.492936,-6.943879,5.866432,-3.930577,182,work_migration,False,[np.str_('San-Pedro')],336.0
+b8df98c0e7e8,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Yamoussoukro,Yamoussoukro,5.336994,-4.095721,6.939703,-5.379229,101,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],227.8
+75d593a8e488,2024-01-29T00:00:00,Doropo,Zanzan,Boundiali,Savanes,9.764882,-3.257794,9.090588,-6.693649,95,work_migration,False,[np.str_('Doropo')],384.3
+e4ed772a6ad6,2024-01-13T00:00:00,Korhogo,Savanes,Rubino,Lagunes,9.713513,-5.741701,6.00396,-4.362532,61,seasonal_agriculture,False,[np.str_('Korhogo')],439.6
+d5f8650baf2d,2024-01-25T00:00:00,Bouake,ValléeduBandama,Sinematiali,Savanes,7.69353,-5.031872,9.450403,-5.321591,9,temporary_stay,False,[np.str_('Bouake')],197.9
+a8893d6f20b8,2024-01-30T00:00:00,Yamoussoukro,Yamoussoukro,Grabo,Bas-Sassandra,6.830137,-5.39438,4.971302,-7.432327,281,work_migration,True,"[np.str_('Yamoussoukro'), np.str_('Anyama')]",305.8
+fa7ba4cbb9b6,2024-01-08T00:00:00,Abidjan-Ville,Abidjan,Tabou,Bas-Sassandra,5.308653,-3.929583,4.49214,-7.431038,122,education_migration,False,[np.str_('Abidjan-Ville')],398.4
+db6b213f25b5,2024-01-25T00:00:00,Abidjan-Ville,Abidjan,Kolia,Savanes,5.32741,-4.054907,9.703745,-6.577233,16,temporary_stay,False,[np.str_('Abidjan-Ville')],560.4
+9f4143e6e6a8,2024-01-24T00:00:00,Abidjan-Ville,Abidjan,Dapéoua,Bas-Sassandra,5.34491,-4.116378,6.055217,-6.94333,109,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],322.6
+76d51327ab73,2024-01-06T00:00:00,Bouake,ValléeduBandama,Komborodougou,Savanes,7.685759,-4.919914,9.348677,-5.434577,171,education_migration,False,[np.str_('Bouake')],193.4
+07f08a4c4e0f,2024-01-20T00:00:00,Korhogo,Savanes,Goulia,Denguélé,9.44264,-5.683969,10.142413,-7.318729,273,education_migration,False,[np.str_('Korhogo')],195.3
+51ee43e4fb0c,2024-01-04T00:00:00,Divo,Gôh-Djiboua,Gagnoa,Gôh-Djiboua,5.939502,-5.223776,5.971782,-6.009425,302,work_migration,False,[np.str_('Divo')],87.0
+f59a7854390f,2024-01-22T00:00:00,Bouna,Zanzan,Tiemelekro,Lacs,9.084437,-2.862327,6.570137,-4.755763,304,work_migration,False,[np.str_('Bouna')],348.8
+0d4ea0d908d5,2024-01-17T00:00:00,Duékoué,Montagnes,Ferkessedougou,Savanes,6.495463,-7.209274,9.856052,-5.202023,192,work_migration,False,[np.str_('Duékoué')],434.1
+e6a11ec4c9f7,2024-01-06T00:00:00,Abidjan-Ville,Abidjan,Niakarmadougou,ValléeduBandama,5.251433,-4.075295,8.497693,-5.453842,211,work_migration,False,[np.str_('Abidjan-Ville')],391.7
+a04c28a9c626,2024-01-15T00:00:00,Abidjan-Ville,Abidjan,Kokoumbo,Lacs,5.294482,-4.068511,6.592633,-5.261256,183,work_migration,False,[np.str_('Abidjan-Ville')],195.5
+bd58b8626fbf,2024-01-30T00:00:00,Arrah,Lacs,Dabakala,ValléeduBandama,6.78078,-3.858587,8.360928,-4.361007,86,seasonal_agriculture,True,"[np.str_('Arrah'), np.str_('Bingerville')]",184.2
+4a3f01f5aa49,2024-01-08T00:00:00,Ayame,Comoé,Man,Montagnes,5.610795,-3.057855,7.342466,-7.665048,33,seasonal_agriculture,False,[np.str_('Ayame')],544.2
+9469c636c48f,2024-01-22T00:00:00,Yamoussoukro,Yamoussoukro,Arrah,Lacs,6.91641,-5.329583,6.891024,-3.784855,362,permanent_relocation,False,[np.str_('Yamoussoukro')],170.5
+c4bd628a2552,2024-01-30T00:00:00,Abidjan-Ville,Abidjan,Issia,Sassandra-Marahoué,5.278262,-3.894406,6.559487,-6.783052,292,work_migration,False,[np.str_('Abidjan-Ville')],349.8
+617b261a4cab,2024-01-28T00:00:00,Nielle,Savanes,Beoumi,ValléeduBandama,10.240323,-5.635952,7.600155,-5.635729,16,temporary_stay,False,[np.str_('Nielle')],293.6
+3832f84d469c,2024-01-07T00:00:00,Diegonefla,Gôh-Djiboua,Zuénoula,Sassandra-Marahoué,6.287898,-5.678402,7.594554,-5.928315,288,education_migration,False,[np.str_('Diegonefla')],147.9
+95bccb686bc9,2024-01-03T00:00:00,Abidjan-Ville,Abidjan,Blolequin,Montagnes,5.275002,-4.058487,6.609073,-7.917022,310,work_migration,False,[np.str_('Abidjan-Ville')],451.8
+abd44936a511,2024-01-10T00:00:00,Gagnoa,Gôh-Djiboua,Zikisso,Gôh-Djiboua,5.867307,-6.247656,6.034199,-5.701669,136,education_migration,False,[np.str_('Gagnoa')],63.2
+7bded92f25e5,2024-01-17T00:00:00,Bouake,ValléeduBandama,Doropo,Zanzan,7.752988,-4.999395,9.773896,-3.310118,43,circular_migration,False,[np.str_('Bouake')],291.5
+38782e81215a,2024-01-22T00:00:00,Bouake,ValléeduBandama,Koonan,Woroba,7.725763,-5.052133,8.414865,-8.112623,139,work_migration,False,[np.str_('Bouake')],345.5
+9ce820df24ae,2024-01-26T00:00:00,Koro,Woroba,Bouna,Zanzan,8.480076,-7.291347,8.716624,-3.594162,25,circular_migration,False,[np.str_('Koro')],407.3
+60fd2fc76647,2024-01-20T00:00:00,Gagnoa,Gôh-Djiboua,Tortiya,ValléeduBandama,5.922498,-5.843448,8.829702,-5.520505,241,education_migration,False,[np.str_('Gagnoa')],325.2
+bb416f8fab67,2024-01-09T00:00:00,Abidjan-Ville,Abidjan,Tengréla,Savanes,5.353422,-3.959541,10.368204,-6.45352,211,permanent_relocation,False,[np.str_('Abidjan-Ville')],621.6
+cf3a5749f2ef,2024-01-01T00:00:00,Taabo,Lagunes,Diabo,ValléeduBandama,6.21066,-5.223253,7.944187,-5.149006,26,temporary_stay,False,[np.str_('Taabo')],192.9
+3e068223c3ad,2024-01-06T00:00:00,Abidjan-Ville,Abidjan,Bouafle,Sassandra-Marahoué,5.396501,-4.082421,6.803321,-5.718561,220,work_migration,False,[np.str_('Abidjan-Ville')],239.2
+0ec2a76fb430,2024-01-14T00:00:00,Daloa,Sassandra-Marahoué,Diegonefla,Gôh-Djiboua,6.775746,-6.376888,6.20801,-5.47786,216,permanent_relocation,False,[np.str_('Daloa')],117.7
+ca39e2fd8dc8,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Dualla,Woroba,5.275071,-4.049109,8.276017,-6.36979,171,work_migration,False,[np.str_('Abidjan-Ville')],420.7
+5fb0d61946b5,2024-01-13T00:00:00,Abidjan-Ville,Abidjan,Niakarmadougou,ValléeduBandama,5.322162,-4.038166,8.494581,-5.271867,192,education_migration,False,[np.str_('Abidjan-Ville')],378.1
+8d942401fee2,2024-01-01T00:00:00,Abidjan-Ville,Abidjan,Gnamangui,Bas-Sassandra,5.357483,-3.96491,5.48506,-6.714643,50,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],304.7
+5fa02b0a955f,2024-01-14T00:00:00,Daloa,Sassandra-Marahoué,M'batto,Lacs,6.648618,-6.228022,6.571324,-4.415637,212,permanent_relocation,True,"[np.str_('Daloa'), np.str_('Abidjan-Ville')]",200.4
+218c0e983c30,2024-01-06T00:00:00,Abidjan-Ville,Abidjan,Gbongaha,Denguélé,5.26997,-4.030683,9.277452,-7.261884,97,permanent_relocation,False,[np.str_('Abidjan-Ville')],570.6
+82ff0b2d49d7,2024-01-18T00:00:00,Boundiali,Savanes,Agboville,Lagunes,9.169397,-6.489868,5.975021,-4.540705,96,seasonal_agriculture,True,"[np.str_('Boundiali'), np.str_('Anyama')]",415.1
+cb7b63b6bdb4,2024-01-21T00:00:00,Morondo,Woroba,Rubino,Lagunes,8.884874,-6.676462,6.091832,-4.339931,116,work_migration,False,[np.str_('Morondo')],403.5
+c0b14e6f8ed7,2024-01-08T00:00:00,Abidjan-Ville,Abidjan,Satama-Sokoura,ValléeduBandama,5.272631,-4.069363,7.955638,-4.313788,100,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],299.6
+f313a47db6a6,2024-01-20T00:00:00,Abidjan-Ville,Abidjan,M'Bahiakro,Lacs,5.304068,-3.99658,7.831148,-4.40484,130,work_migration,False,[np.str_('Abidjan-Ville')],284.6
+fcb71c766978,2024-01-17T00:00:00,Dioulatiedougou,Denguélé,San-Pedro,Bas-Sassandra,9.128286,-7.302277,5.085031,-6.403615,145,education_migration,False,[np.str_('Dioulatiedougou')],460.4
+3148296bd8bb,2024-01-03T00:00:00,San-Pedro,Bas-Sassandra,Kani,Woroba,5.281718,-6.872373,8.597316,-6.540458,81,seasonal_agriculture,False,[np.str_('San-Pedro')],370.5
+b89633f5c897,2024-01-08T00:00:00,Abidjan-Ville,Abidjan,Dualla,Woroba,5.446861,-4.142169,8.317205,-6.485841,18,temporary_stay,False,[np.str_('Abidjan-Ville')],410.8
+7c0fc1927c3e,2024-01-13T00:00:00,Abidjan-Ville,Abidjan,Yamoussoukro,Yamoussoukro,5.341752,-4.122184,6.803824,-5.343831,218,work_migration,False,[np.str_('Abidjan-Ville')],211.4
+aa229b850fb0,2024-01-10T00:00:00,Abidjan-Ville,Abidjan,Dioulatiedougou,Denguélé,5.362477,-3.970557,9.173948,-7.395741,108,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],567.7
+b69f101bc99c,2024-01-12T00:00:00,Abidjan-Ville,Abidjan,Man,Montagnes,5.415378,-3.9684,7.309591,-7.584997,208,work_migration,False,[np.str_('Abidjan-Ville')],451.8
+3b97dcb98ee4,2024-01-24T00:00:00,Gbeleban,Denguélé,Taabo,Lagunes,9.665556,-8.116771,6.203321,-4.873502,127,permanent_relocation,False,[np.str_('Gbeleban')],525.1
+50e6c3fe4f0f,2024-01-13T00:00:00,Yamoussoukro,Yamoussoukro,Touba,Woroba,6.690382,-5.196001,8.172675,-7.383729,351,permanent_relocation,True,"[np.str_('Yamoussoukro'), np.str_('Abidjan-Ville')]",292.1
+3bb7b8638ab1,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Gnamangui,Bas-Sassandra,5.23794,-4.093939,5.531107,-6.614811,266,work_migration,False,[np.str_('Abidjan-Ville')],281.0
+b1ee98f40c5a,2024-01-13T00:00:00,Daloa,Sassandra-Marahoué,Kassere,Savanes,6.782074,-6.242761,9.731316,-6.289072,29,temporary_stay,False,[np.str_('Daloa')],328.0
+55f8efa6e444,2024-01-29T00:00:00,Bouake,ValléeduBandama,Grand-Zattry,Bas-Sassandra,7.639392,-4.966396,6.115849,-6.785925,183,work_migration,False,[np.str_('Bouake')],262.8
+6a8840739ebd,2024-01-17T00:00:00,Logouale,Montagnes,Kouassikro,Lacs,7.094968,-7.564297,7.332078,-4.693051,98,seasonal_agriculture,False,[np.str_('Logouale')],317.8
+a039d200dc7d,2024-01-24T00:00:00,Bouake,ValléeduBandama,Séguéla,Woroba,7.984844,-4.988385,7.817334,-6.763167,350,permanent_relocation,True,"[np.str_('Bouake'), np.str_('Anyama')]",196.4
+bdd22a5f0a80,2024-01-11T00:00:00,Abidjan-Ville,Abidjan,Guitry,Gôh-Djiboua,5.252752,-3.916751,5.320165,-5.341749,260,work_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Anyama')]",158.0
+f2f9462bce85,2024-01-08T00:00:00,Abidjan-Ville,Abidjan,Sassandra,Bas-Sassandra,5.446778,-4.163217,5.263158,-5.909877,341,work_migration,False,[np.str_('Abidjan-Ville')],194.4
+f029f6af712a,2024-01-11T00:00:00,Gagnoa,Gôh-Djiboua,Ouangolodougou,Savanes,5.948709,-5.941987,9.976671,-5.062078,99,seasonal_agriculture,False,[np.str_('Gagnoa')],458.2
+3efbbf218a4b,2024-01-12T00:00:00,Arrah,Lacs,Kouibly,Montagnes,6.737611,-3.846859,7.434557,-7.078863,19,circular_migration,False,[np.str_('Arrah')],365.0
+b6aec274bbed,2024-01-15T00:00:00,Anyama,Abidjan,Ettrokro,Lacs,5.475107,-3.85593,7.32084,-3.670328,282,work_migration,False,[np.str_('Anyama')],206.3
+5bb9cc3e36c6,2024-01-16T00:00:00,San-Pedro,Bas-Sassandra,Soubre,Bas-Sassandra,5.19024,-6.684234,5.793116,-6.455956,43,seasonal_agriculture,True,"[np.str_('San-Pedro'), np.str_('Bingerville')]",71.6
+bb0d5058b10a,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Tiassalé,Lagunes,5.234279,-3.874378,6.188849,-4.719907,245,permanent_relocation,False,[np.str_('Abidjan-Ville')],141.5
+b67d2da304e3,2024-01-17T00:00:00,Abidjan-Ville,Abidjan,Satama-Sokoura,ValléeduBandama,5.266187,-3.932979,7.934647,-4.450896,37,temporary_stay,False,[np.str_('Abidjan-Ville')],302.2
+ded1ba4a5ae6,2024-01-14T00:00:00,Abidjan-Ville,Abidjan,Taabo,Lagunes,5.364253,-4.048655,6.250525,-5.161286,103,seasonal_agriculture,False,[np.str_('Abidjan-Ville')],157.7
+1ba86f841ba2,2024-01-18T00:00:00,Bouake,ValléeduBandama,Agboville,Lagunes,7.966327,-4.760878,5.860886,-4.356062,177,permanent_relocation,False,[np.str_('Bouake')],238.3
+bdc3e05a4a87,2024-01-30T00:00:00,Satama-Sokoura,ValléeduBandama,Kokoumbo,Lacs,8.063457,-4.415508,6.52107,-5.107553,119,seasonal_agriculture,False,[np.str_('Satama-Sokoura')],187.7
+68185c9ec691,2024-01-24T00:00:00,Bouake,ValléeduBandama,Bediala,Sassandra-Marahoué,7.971601,-4.943575,7.100182,-6.235882,41,circular_migration,True,"[np.str_('Bouake'), np.str_('Abidjan-Ville')]",172.3
+cfe6789d29c3,2024-01-03T00:00:00,Man,Montagnes,Adiake,Comoé,7.300089,-7.669338,5.179324,-3.26619,36,circular_migration,False,[np.str_('Man')],540.8
+d19cf5483ef0,2024-01-14T00:00:00,San-Pedro,Bas-Sassandra,Kongasso,Woroba,4.789385,-6.576258,7.716419,-6.084719,192,work_migration,True,"[np.str_('San-Pedro'), np.str_('Anyama')]",330.0
+7b576d0e9930,2024-01-21T00:00:00,Abidjan-Ville,Abidjan,Foumbolo,ValléeduBandama,5.384207,-4.099096,8.697332,-4.853811,51,temporary_stay,False,[np.str_('Abidjan-Ville')],377.7
+11e8d89bdb50,2024-01-20T00:00:00,Yamoussoukro,Yamoussoukro,Bin-Houye,Montagnes,7.016558,-5.405911,6.738267,-8.202401,175,education_migration,False,[np.str_('Yamoussoukro')],310.3
+2504c5063ea0,2024-01-15T00:00:00,Aboisso,Comoé,Transua,Zanzan,5.443918,-3.398552,7.418871,-3.030114,158,permanent_relocation,False,[np.str_('Aboisso')],223.3
+45ec413f1a2a,2024-01-28T00:00:00,Bouake,ValléeduBandama,Attiégoukaro,Yamoussoukro,7.743777,-4.920018,7.032118,-5.168791,112,seasonal_agriculture,False,[np.str_('Bouake')],83.8
+4cade912ef20,2024-01-01T00:00:00,Sikensi,Lagunes,Tiemelekro,Lacs,5.809124,-4.607423,6.318752,-4.669418,9,temporary_stay,False,[np.str_('Sikensi')],57.1
+85d24b5152cc,2024-01-12T00:00:00,Bouake,ValléeduBandama,Tie-N'diekro,Lacs,7.956286,-4.708412,7.397837,-4.790618,361,work_migration,False,[np.str_('Bouake')],62.8
+d54ee43d6dd0,2024-01-14T00:00:00,Abidjan-Ville,Abidjan,Blolequin,Montagnes,5.247131,-3.90569,6.811788,-7.967961,141,work_migration,False,[np.str_('Abidjan-Ville')],481.7
+2b9a681bc4b6,2024-01-16T00:00:00,Abidjan-Ville,Abidjan,Affery,Lagunes,5.345576,-3.991769,6.327155,-3.962628,229,education_migration,True,"[np.str_('Abidjan-Ville'), np.str_('Bingerville')]",109.2
+9ea4800ca2fb,2024-01-17T00:00:00,Bouake,ValléeduBandama,Karakoro,Savanes,7.743206,-5.092545,9.416769,-5.483546,254,work_migration,False,[np.str_('Bouake')],191.0
+6706818a6494,2024-01-30T00:00:00,Abidjan-Ville,Abidjan,Morondo,Woroba,5.314391,-4.008406,8.96555,-6.8595,351,work_migration,False,[np.str_('Abidjan-Ville')],513.6
+bfcc5bd79201,2024-01-07T00:00:00,Abidjan-Ville,Abidjan,Minignan,Denguélé,5.342573,-4.124896,10.046733,-7.893959,124,education_migration,False,[np.str_('Abidjan-Ville')],667.8
+6a694c283f4a,2024-01-01T00:00:00,Kaniasso,Denguélé,Ettrokro,Lacs,9.756411,-7.478459,7.318684,-3.814515,303,permanent_relocation,False,[np.str_('Kaniasso')],485.6
+52e746caccb4,2024-01-21T00:00:00,Bouake,ValléeduBandama,Kokoumbo,Lacs,7.927219,-4.856309,6.515597,-5.303936,355,permanent_relocation,False,[np.str_('Bouake')],164.5
+ca36abb1d6b7,2024-01-10T00:00:00,Abidjan-Ville,Abidjan,Zuénoula,Sassandra-Marahoué,5.252946,-3.849981,7.378777,-6.107997,266,work_migration,False,[np.str_('Abidjan-Ville')],343.7

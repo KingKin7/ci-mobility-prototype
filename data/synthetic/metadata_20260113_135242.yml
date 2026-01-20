@@ -1,0 +1,85 @@
+config_used: config\data_params.yml
+datasets:
+  migration:
+    columns:
+    - user_id
+    - timestamp
+    - origin_locality
+    - origin_region
+    - current_locality
+    - current_region
+    - origin_lat
+    - origin_lon
+    - current_lat
+    - current_lon
+    - residence_duration_days
+    - movement_type
+    - is_return_migration
+    - previous_locations
+    - distance_km
+    rows: 500
+  mobility:
+    columns:
+    - user_id
+    - timestamp
+    - trip_id
+    - origin_lat
+    - origin_lon
+    - dest_lat
+    - dest_lon
+    - origin_antenna
+    - dest_antenna
+    - duration_min
+    - distance_km
+    - speed_kmh
+    - transport_mode
+    - trip_purpose
+    - hour_of_day
+    - locality
+    rows: 16852
+  poverty:
+    columns:
+    - user_id
+    - timestamp
+    - week_start
+    - latitude
+    - longitude
+    - locality
+    - department
+    - region
+    - antenna_id
+    - call_duration_sec
+    - data_mb
+    - recharge_amount_fcfa
+    - recharge_frequency_weekly
+    - contact_diversity_score
+    - mobility_radius_km
+    - phone_type
+    - subscription_type
+    rows: 50000
+  users:
+    columns:
+    - user_id
+    - age_group
+    - gender
+    - occupation
+    - phone_type
+    - subscription_type
+    - home_lat
+    - home_lon
+    - home_h3
+    - locality
+    - department
+    - region
+    - urban_rural
+    - household_size
+    - initial_wealth_score
+    - creation_timestamp
+    rows: 10000
+gadm_used: true
+generation_timestamp: '2026-01-13T13:52:43.193125'
+n_users: 10000
+period:
+  end: '2024-01-31T00:00:00'
+  start: '2024-01-01T00:00:00'
+version: '20260113_135242'
